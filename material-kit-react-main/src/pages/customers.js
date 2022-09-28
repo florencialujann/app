@@ -9,7 +9,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        Customers | Material Kit
+        Profesores | Encontrá tu profesor ideal
       </title>
     </Head>
     <Box

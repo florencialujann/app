@@ -32,15 +32,15 @@ const Page = () => (
             color="textPrimary"
             variant="h1"
           >
-            404: The page you are looking for isn’t here
+            404: La página que buscas no está aquí
           </Typography>
           <Typography
             align="center"
             color="textPrimary"
             variant="subtitle2"
           >
-            You either tried some shady route or you came here by mistake.
-            Whichever it is, try using the navigation
+            O intentaste una ruta sombría o viniste aquí por error.
+            Sea lo que sea, intenta usar la navegación
           </Typography>
           <Box sx={{ textAlign: 'center' }}>
             <img
@@ -64,7 +64,7 @@ const Page = () => (
               sx={{ mt: 3 }}
               variant="contained"
             >
-              Go back to dashboard
+              Volver al Inicio
             </Button>
           </NextLink>
         </Box>

@@ -11,19 +11,19 @@ import { Google as GoogleIcon } from '../icons/google';
 const Login = () => {
   const formik = useFormik({
     initialValues: {
-      email: 'demo@devias.io',
-      password: 'Password123'
+      email: 'juanadearco@correcaliente.com.ar',
+      password: 'Password135'
     },
     validationSchema: Yup.object({
       email: Yup
         .string()
-        .email('Must be a valid email')
+        .email('Debe ser un mail válido')
         .max(255)
-        .required('Email is required'),
+        .required('Email es requirido'),
       password: Yup
         .string()
         .max(255)
-        .required('Password is required')
+        .required('Contraseña es requirida')
     }),
     onSubmit: () => {
       Router
@@ -35,7 +35,7 @@ const Login = () => {
   return (
     <>
       <Head>
-        <title>Login | Material Kit</title>
+        <title>Iniciar Sesión | Profer</title>
       </Head>
       <Box
         component="main"
@@ -55,7 +55,7 @@ const Login = () => {
               component="a"
               startIcon={<ArrowBackIcon fontSize="small" />}
             >
-              Dashboard
+              Inicio
             </Button>
           </NextLink>
           <form onSubmit={formik.handleSubmit}>
@@ -64,14 +64,14 @@ const Login = () => {
                 color="textPrimary"
                 variant="h4"
               >
-                Sign in
+                Iniciar Sesión
               </Typography>
               <Typography
                 color="textSecondary"
                 gutterBottom
                 variant="body2"
               >
-                Sign in on the internal platform
+                Iniciar sesión en la plataforma interna
               </Typography>
             </Box>
             <Grid
@@ -91,7 +91,7 @@ const Login = () => {
                   size="large"
                   variant="contained"
                 >
-                  Login with Facebook
+                  Iniciar con Facebook
                 </Button>
               </Grid>
               <Grid
@@ -107,7 +107,7 @@ const Login = () => {
                   startIcon={<GoogleIcon />}
                   variant="contained"
                 >
-                  Login with Google
+                  Iniciar con Google
                 </Button>
               </Grid>
             </Grid>
@@ -122,14 +122,14 @@ const Login = () => {
                 color="textSecondary"
                 variant="body1"
               >
-                or login with email address
+                o iniciar con correo electrónico
               </Typography>
             </Box>
             <TextField
               error={Boolean(formik.touched.email && formik.errors.email)}
               fullWidth
               helperText={formik.touched.email && formik.errors.email}
-              label="Email Address"
+              label="Correo electrónico"
               margin="normal"
               name="email"
               onBlur={formik.handleBlur}
@@ -142,7 +142,7 @@ const Login = () => {
               error={Boolean(formik.touched.password && formik.errors.password)}
               fullWidth
               helperText={formik.touched.password && formik.errors.password}
-              label="Password"
+              label="Contraseña"
               margin="normal"
               name="password"
               onBlur={formik.handleBlur}
@@ -160,14 +160,14 @@ const Login = () => {
                 type="submit"
                 variant="contained"
               >
-                Sign In Now
+                Inscribirme
               </Button>
             </Box>
             <Typography
               color="textSecondary"
               variant="body2"
             >
-              Don&apos;t have an account?
+              Aún no tienes una cuenta?
               {' '}
               <NextLink
                 href="/register"
@@ -180,7 +180,7 @@ const Login = () => {
                     cursor: 'pointer'
                   }}
                 >
-                  Sign Up
+                  Regístrate
                 </Link>
               </NextLink>
             </Typography>
