@@ -20,32 +20,32 @@ const items = [
   {
     href: '/',
     icon: (<ChartBarIcon fontSize="small" />),
-    title: 'Dashboard'
+    title: 'es aca la re puta madre'
   },
   {
     href: '/customers',
     icon: (<UsersIcon fontSize="small" />),
-    title: 'Customers'
+    title: 'mira flor'
   },
   {
     href: '/products',
     icon: (<ShoppingBagIcon fontSize="small" />),
-    title: 'Products'
+    title: 'lo '
   },
   {
     href: '/account',
     icon: (<UserIcon fontSize="small" />),
-    title: 'Account'
+    title: 'en'
   },
   {
     href: '/settings',
     icon: (<CogIcon fontSize="small" />),
-    title: 'Settings'
+    title: 'contramos'
   },
   {
     href: '/login',
     icon: (<LockIcon fontSize="small" />),
-    title: 'Login'
+    title: 'seeeeeeeeeeeeeee'
   },
   {
     href: '/register',

@@ -12,8 +12,8 @@ import {
 
 const states = [
   {
-    value: 'alabama',
-    label: 'Alabama'
+    value: 'argentina',
+    label: 'Argentina'
   },
   {
     value: 'new-york',
@@ -27,10 +27,10 @@ const states = [
 
 export const AccountProfileDetails = (props) => {
   const [values, setValues] = useState({
-    firstName: 'Katarina',
+    firstName: 'Messi',
     lastName: 'Smith',
     email: 'demo@devias.io',
-    phone: '',
+    phone: '4749',
     state: 'Alabama',
     country: 'USA'
   });
