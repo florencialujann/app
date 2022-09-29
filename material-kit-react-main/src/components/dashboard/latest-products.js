@@ -98,7 +98,7 @@ export const LatestProducts = (props) => (
         size="small"
         variant="text"
       >
-        View all
+        Mirar Todos
       </Button>
     </Box>
   </Card>

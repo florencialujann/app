@@ -89,7 +89,7 @@ export const Sales = (props) => {
             endIcon={<ArrowDropDownIcon fontSize="small" />}
             size="small"
           >
-            Last 7 days
+            Último mes
           </Button>
         )}
         title="Latest Sales"
@@ -121,7 +121,7 @@ export const Sales = (props) => {
           endIcon={<ArrowRightIcon fontSize="small" />}
           size="small"
         >
-          Overview
+          Vista General
         </Button>
       </Box>
     </Card>

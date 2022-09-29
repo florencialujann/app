@@ -208,7 +208,7 @@ export const DashboardSidebar = (props) => {
               sx={{ mt: 2 }}
               variant="contained"
             >
-              Pro Live Preview
+              Ver Más
             </Button>
           </NextLink>
         </Box>

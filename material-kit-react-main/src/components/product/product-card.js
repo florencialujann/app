@@ -64,7 +64,7 @@ export const ProductCard = ({ product, ...rest }) => (
             sx={{ pl: 1 }}
             variant="body2"
           >
-            Updated 2hr ago
+            Actualizado hace 2 horas
           </Typography>
         </Grid>
         <Grid
@@ -81,9 +81,9 @@ export const ProductCard = ({ product, ...rest }) => (
             sx={{ pl: 1 }}
             variant="body2"
           >
-            {product.totalDownloads}
+            {product.totalClases}// Verificar
             {' '}
-            Downloads
+            Clases
           </Typography>
         </Grid>
       </Grid>

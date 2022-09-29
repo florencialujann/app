@@ -27,26 +27,26 @@ export const ProductListToolbar = (props) => (
         sx={{ m: 1 }}
         variant="h4"
       >
-        Products
+        Clases
       </Typography>
       <Box sx={{ m: 1 }}>
         <Button
           startIcon={(<UploadIcon fontSize="small" />)}
           sx={{ mr: 1 }}
         >
-          Import
+          Importar
         </Button>
         <Button
           startIcon={(<DownloadIcon fontSize="small" />)}
           sx={{ mr: 1 }}
         >
-          Export
+          Exportar
         </Button>
         <Button
           color="primary"
           variant="contained"
         >
-          Add products
+          Agregar Clases
         </Button>
       </Box>
     </Box>
@@ -68,7 +68,7 @@ export const ProductListToolbar = (props) => (
                   </InputAdornment>
                 )
               }}
-              placeholder="Search product"
+              placeholder="Buscar Clases"
               variant="outlined"
             />
           </Box>
