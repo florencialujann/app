@@ -20,42 +20,42 @@ const items = [
   {
     href: '/',
     icon: (<ChartBarIcon fontSize="small" />),
-    title: 'es aca la re puta madre'
+    title: 'Inicio'
   },
   {
     href: '/customers',
     icon: (<UsersIcon fontSize="small" />),
-    title: 'mira flor'
+    title: 'Profesores'
   },
   {
     href: '/products',
     icon: (<ShoppingBagIcon fontSize="small" />),
-    title: 'lo '
+    title: 'Clases'
   },
   {
     href: '/account',
     icon: (<UserIcon fontSize="small" />),
-    title: 'en'
+    title: 'Mi Cuenta'
   },
   {
     href: '/settings',
     icon: (<CogIcon fontSize="small" />),
-    title: 'contramos'
+    title: 'Configuración'
   },
   {
     href: '/login',
     icon: (<LockIcon fontSize="small" />),
-    title: 'seeeeeeeeeeeeeee'
+    title: 'Iniciar Sesión'
   },
   {
     href: '/register',
     icon: (<UserAddIcon fontSize="small" />),
-    title: 'Register'
+    title: 'Registrarse'
   },
   {
     href: '/404',
     icon: (<XCircleIcon fontSize="small" />),
-    title: 'Error'
+    title: 'Pagina no encontrada'
   }
 ];
 
@@ -124,13 +124,13 @@ export const DashboardSidebar = (props) => {
                   color="inherit"
                   variant="subtitle1"
                 >
-                  Acme Inc
+                  PROFER
                 </Typography>
                 <Typography
                   color="neutral.400"
                   variant="body2"
                 >
-                  Your tier
+                  Cuenta
                   {' '}
                   : Premium
                 </Typography>
@@ -172,13 +172,13 @@ export const DashboardSidebar = (props) => {
             color="neutral.100"
             variant="subtitle2"
           >
-            Need more features?
+            Queres saber mas?
           </Typography>
           <Typography
             color="neutral.500"
             variant="body2"
           >
-            Check out our Pro solution template.
+            Te contamos mas acerca de Profer
           </Typography>
           <Box
             sx={{

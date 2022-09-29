@@ -71,13 +71,13 @@ export const AccountPopover = (props) => {
         }}
       >
         <Typography variant="overline">
-          Account
+          Mi Cuenta
         </Typography>
         <Typography
           color="text.secondary"
           variant="body2"
         >
-          John Doe
+          Juan de la Cruz
         </Typography>
       </Box>
       <MenuList
@@ -94,7 +94,7 @@ export const AccountPopover = (props) => {
         }}
       >
         <MenuItem onClick={handleSignOut}>
-          Sign out
+          Cerrar Sesión
         </MenuItem>
       </MenuList>
     </Popover>
