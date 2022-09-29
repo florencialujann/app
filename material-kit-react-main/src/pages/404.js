@@ -7,7 +7,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        404 | Material Kit
+        404 | PROFER
       </title>
     </Head>
     <Box
@@ -32,7 +32,7 @@ const Page = () => (
             color="textPrimary"
             variant="h1"
           >
-            404: La página que buscas no está aquí
+            404: Opss! La página que buscas no está aquí
           </Typography>
           <Typography
             align="center"

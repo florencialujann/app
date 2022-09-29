@@ -19,19 +19,19 @@ export const Budget = (props) => (
             gutterBottom
             variant="overline"
           >
-            BUDGET
+            ALUMNOS 
           </Typography>
           <Typography
             color="textPrimary"
             variant="h4"
           >
-            $24k
+            4,5k
           </Typography>
         </Grid>
         <Grid item>
           <Avatar
             sx={{
-              backgroundColor: 'error.main',
+              backgroundColor: 'success.main',
               height: 56,
               width: 56
             }}
@@ -47,9 +47,9 @@ export const Budget = (props) => (
           alignItems: 'center'
         }}
       >
-        <ArrowDownwardIcon color="error" />
+        <ArrowDownwardIcon color="success" />
         <Typography
-          color="error"
+          color="success"
           sx={{
             mr: 1
           }}
@@ -61,7 +61,7 @@ export const Budget = (props) => (
           color="textSecondary"
           variant="caption"
         >
-          Since last month
+          Del último mes
         </Typography>
       </Box>
     </CardContent>

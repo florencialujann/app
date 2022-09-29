@@ -157,43 +157,43 @@ export const theme = createTheme({
     },
     divider: '#E6E8F0',
     primary: {
-      main: '#5048E5',
-      light: '#828DF8',
-      dark: '#3832A0',
+      main: '#617580',
+      light: '#b6ddf2',
+      dark: '#57859e',
       contrastText: '#FFFFFF'
     },
     secondary: {
-      main: '#10B981',
-      light: '#3FC79A',
-      dark: '#0B815A',
+      main: '#DDEDAA',
+      light: '#DDEDAA',
+      dark: '#818a66',
       contrastText: '#FFFFFF'
     },
     success: {
-      main: '#14B8A6',
+      main: '#5a9c89',
       light: '#43C6B7',
-      dark: '#0E8074',
+      dark: '#74b3ab',
       contrastText: '#FFFFFF'
     },
     info: {
-      main: '#2196F3',
-      light: '#64B6F7',
-      dark: '#0B79D0',
+      main: '#93B5C6',
+      light: '#93B5C6',
+      dark: '0B79D0',
       contrastText: '#FFFFFF'
     },
     warning: {
-      main: '#FFB020',
-      light: '#FFBF4C',
-      dark: '#B27B16',
+      main: '#F0CF65',
+      light: '#F0CF65',
+      dark: '#ab8e32',
       contrastText: '#FFFFFF'
     },
     error: {
       main: '#D14343',
-      light: '#DA6868',
-      dark: '#922E2E',
+      light: '#D14343',
+      dark: '#D14343',
       contrastText: '#FFFFFF'
     },
     text: {
-      primary: '#121828',
+      primary: '#2c3542',
       secondary: '#65748B',
       disabled: 'rgba(55, 65, 81, 0.48)'
     }

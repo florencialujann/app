@@ -14,7 +14,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        Inicio | Material Kit
+        Inicio | PROFER
       </title>
     </Head>
     <Box

@@ -64,7 +64,7 @@ export const AccountProfile = (props) => (
         fullWidth
         variant="text"
       >
-        Upload picture
+        Subir foto
       </Button>
     </CardActions>
   </Card>

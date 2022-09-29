@@ -61,7 +61,7 @@ const Register = () => {
     <>
       <Head>
         <title>
-          Register | Material Kit
+          Registrarse | PROFER
         </title>
       </Head>
       <Box
@@ -82,7 +82,7 @@ const Register = () => {
               component="a"
               startIcon={<ArrowBackIcon fontSize="small" />}
             >
-              Dashboard
+              Inicio
             </Button>
           </NextLink>
           <form onSubmit={formik.handleSubmit}>
@@ -91,21 +91,21 @@ const Register = () => {
                 color="textPrimary"
                 variant="h4"
               >
-                Create a new account
+                Crear una cuenta
               </Typography>
               <Typography
                 color="textSecondary"
                 gutterBottom
                 variant="body2"
               >
-                Use your email to create a new account
+                Usa tu correo electrónico para crear una cuenta
               </Typography>
             </Box>
             <TextField
               error={Boolean(formik.touched.firstName && formik.errors.firstName)}
               fullWidth
               helperText={formik.touched.firstName && formik.errors.firstName}
-              label="First Name"
+              label="Primer Nombre"
               margin="normal"
               name="firstName"
               onBlur={formik.handleBlur}
@@ -117,7 +117,7 @@ const Register = () => {
               error={Boolean(formik.touched.lastName && formik.errors.lastName)}
               fullWidth
               helperText={formik.touched.lastName && formik.errors.lastName}
-              label="Last Name"
+              label="Apellido"
               margin="normal"
               name="lastName"
               onBlur={formik.handleBlur}
@@ -129,7 +129,7 @@ const Register = () => {
               error={Boolean(formik.touched.email && formik.errors.email)}
               fullWidth
               helperText={formik.touched.email && formik.errors.email}
-              label="Email Address"
+              label="Correo Electrónico"
               margin="normal"
               name="email"
               onBlur={formik.handleBlur}
@@ -142,7 +142,7 @@ const Register = () => {
               error={Boolean(formik.touched.password && formik.errors.password)}
               fullWidth
               helperText={formik.touched.password && formik.errors.password}
-              label="Password"
+              label="Contraseña"
               margin="normal"
               name="password"
               onBlur={formik.handleBlur}
@@ -167,7 +167,7 @@ const Register = () => {
                 color="textSecondary"
                 variant="body2"
               >
-                I have read the
+                He leído y acepto los
                 {' '}
                 <NextLink
                   href="#"
@@ -178,7 +178,7 @@ const Register = () => {
                     underline="always"
                     variant="subtitle2"
                   >
-                    Terms and Conditions
+                    Términos y Condiciones
                   </Link>
                 </NextLink>
               </Typography>
@@ -197,14 +197,14 @@ const Register = () => {
                 type="submit"
                 variant="contained"
               >
-                Sign Up Now
+                Registrarme Ahora!
               </Button>
             </Box>
             <Typography
               color="textSecondary"
               variant="body2"
             >
-              Have an account?
+              Ya tienes una cuenta?
               {' '}
               <NextLink
                 href="/login"
@@ -214,7 +214,7 @@ const Register = () => {
                   variant="subtitle2"
                   underline="hover"
                 >
-                  Sign In
+                  Inicia Sesión
                 </Link>
               </NextLink>
             </Typography>

@@ -8,7 +8,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        Settings | Material Kit
+        Configuración | PROFER
       </title>
     </Head>
     <Box
@@ -23,7 +23,7 @@ const Page = () => (
           sx={{ mb: 3 }}
           variant="h4"
         >
-          Settings
+          Configuración
         </Typography>
         <SettingsNotifications />
         <Box sx={{ pt: 3 }}>
