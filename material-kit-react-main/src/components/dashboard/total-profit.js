@@ -15,13 +15,13 @@ export const TotalProfit = (props) => (
             gutterBottom
             variant="overline"
           >
-            Mi Billetera
+            PROMEDIO DE GANANCIAS
           </Typography>
           <Typography
             color="textPrimary"
             variant="h4"
           >
-            $2,300.00
+            $10,300.00
           </Typography>
         </Grid>
         <Grid item>
