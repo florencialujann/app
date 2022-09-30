@@ -183,10 +183,17 @@ const Login = () => {
                   Regístrate
                 </Link>
               </NextLink>
+              <Box>
+          haz click en recuperar para recuperar tu contraseña. recuperar 
+    </Box>
             </Typography>
+      
           </form>
         </Container>
       </Box>
+      <Box>
+      haz click en recuperar para recuperar tu contraseña. recuperar 
+    </Box>
     </>
   );
 };

@@ -66,6 +66,22 @@ export const TrafficByDevice = (props) => {
 
   return (
     <Card {...props}>
+
+      <Box>
+        
+        <h1>
+          ¡Da clases!
+          <br></br>
+        ¡Viví de lo que te apasiona!
+        </h1>
+        <p>Independiente y sin intermediarios, enseñá en tu ciudad o barrio a alumnos geniales.
+<br></br>
+Idiomas, deportes, música, arte, ocio, apoyo escolar, ayuda con los deberes, materias académicas, más de 1000 materias para enseñar.
+<br></br>
+Estudiantes, profesores, maestras, profes, autodidactas, apasionados de la enseñanza...¡Sumate a la comunidad de Superprofes! Te esperamos </p>
+      </Box>
+
+
           </Card>
   );
 };
