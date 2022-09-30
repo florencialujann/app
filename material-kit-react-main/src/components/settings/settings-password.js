@@ -25,7 +25,7 @@ export const SettingsPassword = (props) => {
         <CardContent>
           <TextField
             fullWidth
-            label="Contraseña"
+            label="Contraseña actual"
             margin="normal"
             name="contraseña"
             onChange={handleChange}
@@ -35,7 +35,17 @@ export const SettingsPassword = (props) => {
           />
           <TextField
             fullWidth
-            label="Confirmar contraseña"
+            label="Nueva contraseña"
+            margin="normal"
+            name="confirmar"
+            onChange={handleChange}
+            type="password"
+            value={values.confirm}
+            variant="outlined"
+          />
+          <TextField
+            fullWidth
+            label="Confirmar nueva contraseña"
             margin="normal"
             name="confirmar"
             onChange={handleChange}

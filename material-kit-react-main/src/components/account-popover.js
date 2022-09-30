@@ -71,7 +71,7 @@ export const AccountPopover = (props) => {
         }}
       >
         <Typography variant="overline">
-          Mi Cuenta
+          Perfil
         </Typography>
         <Typography
           color="text.secondary"

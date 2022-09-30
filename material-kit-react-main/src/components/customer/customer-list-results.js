@@ -87,7 +87,10 @@ export const CustomerListResults = ({ customers, ...rest }) => {
                   Email
                 </TableCell>
                 <TableCell>
-                  Ubicación
+                  Materia
+                </TableCell>
+                <TableCell>
+                  Precio
                 </TableCell>
                 <TableCell>
                   Teléfono
@@ -136,7 +139,10 @@ export const CustomerListResults = ({ customers, ...rest }) => {
                     {customer.email}
                   </TableCell>
                   <TableCell>
-                    {`${customer.address.city}, ${customer.address.state}, ${customer.address.country}`}
+                    {customer.materia}
+                  </TableCell>
+                  <TableCell>
+                    {customer.precio}
                   </TableCell>
                   <TableCell>
                     {customer.phone}
