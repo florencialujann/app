@@ -66,8 +66,6 @@ export const TrafficByDevice = (props) => {
 
   return (
     <Card {...props}>
-      
-
-    </Card>
+          </Card>
   );
 };
