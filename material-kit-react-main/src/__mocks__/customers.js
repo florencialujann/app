@@ -13,6 +13,7 @@ export const customers = [
     tipo: 'Individual', //filtro
     frecuencia: 'Semanal', //filtro
     
+    
 
   },
   {

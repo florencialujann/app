@@ -81,7 +81,7 @@ export const ProductCard = ({ product, ...rest }) => (
             sx={{ pl: 1 }}
             variant="body2"
           >
-            {product.totalClases}// Verificar
+            {product.totalClases}// Calificar
             {' '}
             Clases
           </Typography>
