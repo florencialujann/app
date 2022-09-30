@@ -13,13 +13,15 @@ import { User as UserIcon } from '../icons/user';
 import { UserAdd as UserAddIcon } from '../icons/user-add';
 import { Users as UsersIcon } from '../icons/users';
 import { XCircle as XCircleIcon } from '../icons/x-circle';
+import { Home } from '../icons/home';
 import { Logo } from './logo';
 import { NavItem } from './nav-item';
+import { Class } from '../icons/class';
 
 const items = [
   {
     href: '/',
-    icon: (<ChartBarIcon fontSize="small" />),
+    icon: (<Home fontSize="small" />),
     title: 'Inicio'
   },
   {
@@ -29,7 +31,7 @@ const items = [
   },
   {
     href: '/products',
-    icon: (<ShoppingBagIcon fontSize="small" />),
+    icon: (<Class fontSize="small" />),
     title: 'Clases'
   },
   {
