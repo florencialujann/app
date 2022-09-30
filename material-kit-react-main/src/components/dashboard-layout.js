@@ -22,6 +22,7 @@ export const DashboardLayout = (props) => {
   return (
     <AuthGuard>
       <DashboardLayoutRoot>
+        
         <Box
           sx={{
             display: 'flex',
@@ -39,5 +40,6 @@ export const DashboardLayout = (props) => {
         open={isSidebarOpen}
       />
     </AuthGuard>
+    
   );
 };
