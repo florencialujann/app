@@ -15,8 +15,8 @@ export const SettingsNotifications = (props) => (
   <form {...props}>
     <Card>
       <CardHeader
-        subheader="Manage the notifications"
-        title="Notifications"
+        subheader="puedes cambiar las notificaciones cuando quieras"
+        title="Notificaciones"
       />
       <Divider />
       <CardContent>
@@ -40,7 +40,7 @@ export const SettingsNotifications = (props) => (
               gutterBottom
               variant="h6"
             >
-              Notifications
+              Notificaciones
             </Typography>
             <FormControlLabel
               control={(
@@ -49,7 +49,7 @@ export const SettingsNotifications = (props) => (
                   defaultChecked
                 />
               )}
-              label="Email"
+              label="Coreo electronico"
             />
             <FormControlLabel
               control={(
@@ -62,7 +62,7 @@ export const SettingsNotifications = (props) => (
             />
             <FormControlLabel
               control={<Checkbox />}
-              label="Text Messages"
+              label="Mensaje de texto"
             />
             <FormControlLabel
               control={(
@@ -71,7 +71,7 @@ export const SettingsNotifications = (props) => (
                   defaultChecked
                 />
               )}
-              label="Phone calls"
+              label="Llamadas"
             />
           </Grid>
           <Grid
@@ -89,7 +89,7 @@ export const SettingsNotifications = (props) => (
               gutterBottom
               variant="h6"
             >
-              Messages
+              Mensajes
             </Typography>
             <FormControlLabel
               control={(
@@ -98,7 +98,7 @@ export const SettingsNotifications = (props) => (
                   defaultChecked
                 />
               )}
-              label="Email"
+              label="Correo electronico"
             />
             <FormControlLabel
               control={<Checkbox />}
@@ -111,7 +111,7 @@ export const SettingsNotifications = (props) => (
                   defaultChecked
                 />
               )}
-              label="Phone calls"
+              label="Llamadas"
             />
           </Grid>
         </Grid>
@@ -128,7 +128,7 @@ export const SettingsNotifications = (props) => (
           color="primary"
           variant="contained"
         >
-          Save
+          Guardar
         </Button>
       </Box>
     </Card>

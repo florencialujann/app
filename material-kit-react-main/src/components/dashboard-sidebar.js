@@ -35,7 +35,7 @@ const items = [
   {
     href: '/account',
     icon: (<UserIcon fontSize="small" />),
-    title: 'Mi Cuenta'
+    title: 'Perfil'
   },
   {
     href: '/settings',

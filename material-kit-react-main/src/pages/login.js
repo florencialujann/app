@@ -11,7 +11,7 @@ import { Google as GoogleIcon } from '../icons/google';
 const Login = () => {
   const formik = useFormik({
     initialValues: {
-      email: 'juanadearco@correcaliente.com.ar',
+      email: 'maildeejemplo@gmail.com.ar',
       password: 'Password135'
     },
     validationSchema: Yup.object({

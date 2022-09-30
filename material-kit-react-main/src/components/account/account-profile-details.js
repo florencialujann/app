@@ -12,8 +12,8 @@ import {
 
 const states = [
   {
-    value: 'argentina',
-    label: 'Argentina'
+    value: 'caba',
+    label: 'CABA'
   },
   {
     value: 'new-york',
@@ -27,12 +27,12 @@ const states = [
 
 export const AccountProfileDetails = (props) => {
   const [values, setValues] = useState({
-    firstName: 'Messi',
-    lastName: 'Smith',
-    email: 'demo@devias.io',
+    firstName: 'Romina',
+    lastName: 'Perez',
+    email: 'RominaPerez@Gmail.com',
     phone: '4749',
-    state: 'Alabama',
-    country: 'USA'
+    state: 'CABA',
+    country: 'Argentina'
   });
 
   const handleChange = (event) => {
@@ -50,8 +50,8 @@ export const AccountProfileDetails = (props) => {
     >
       <Card>
         <CardHeader
-          subheader="The information can be edited"
-          title="Profile"
+          subheader="Puedes modificar tu perfil cuando quieras"
+          title="Perfil"
         />
         <Divider />
         <CardContent>
@@ -66,9 +66,9 @@ export const AccountProfileDetails = (props) => {
             >
               <TextField
                 fullWidth
-                helperText="Please specify the first name"
-                label="First name"
-                name="firstName"
+                /*helperText="Please specify the first name"*/ 
+                label="Nombre"
+                name="nombre"
                 onChange={handleChange}
                 required
                 value={values.firstName}
@@ -82,8 +82,8 @@ export const AccountProfileDetails = (props) => {
             >
               <TextField
                 fullWidth
-                label="Last name"
-                name="lastName"
+                label="Apellido"
+                name="apellido"
                 onChange={handleChange}
                 required
                 value={values.lastName}
@@ -97,8 +97,8 @@ export const AccountProfileDetails = (props) => {
             >
               <TextField
                 fullWidth
-                label="Email Address"
-                name="email"
+                label="Correo electronico"
+                name="mail"
                 onChange={handleChange}
                 required
                 value={values.email}
@@ -112,8 +112,8 @@ export const AccountProfileDetails = (props) => {
             >
               <TextField
                 fullWidth
-                label="Phone Number"
-                name="phone"
+                label="Numero de telefono"
+                name="telefono"
                 onChange={handleChange}
                 type="number"
                 value={values.phone}
@@ -127,8 +127,8 @@ export const AccountProfileDetails = (props) => {
             >
               <TextField
                 fullWidth
-                label="Country"
-                name="country"
+                label="Pais"
+                name="pais"
                 onChange={handleChange}
                 required
                 value={values.country}
@@ -142,8 +142,8 @@ export const AccountProfileDetails = (props) => {
             >
               <TextField
                 fullWidth
-                label="Select State"
-                name="state"
+                label="Selecione su ciudad"
+                name="Ciudad"
                 onChange={handleChange}
                 required
                 select

@@ -67,7 +67,7 @@ export const CustomerListToolbar = (props) => (
                   </InputAdornment>
                 )
               }}
-              placeholder="Search customer"
+              placeholder="Buscar Profesor"
               variant="outlined"
             />
           </Box>

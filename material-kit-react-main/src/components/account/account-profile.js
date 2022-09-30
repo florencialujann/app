@@ -11,10 +11,10 @@ import {
 
 const user = {
   avatar: '/static/images/avatars/avatar_6.png',
-  city: 'Los Angeles',
-  country: 'USA',
+  city: 'CABA',
+  country: 'Argentina',
   jobTitle: 'Senior Developer',
-  name: 'Esteban kito',
+  name: 'Romina Perez',
   timezone: 'GTM-7'
 };
 
