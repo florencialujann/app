@@ -35,7 +35,7 @@ const Login = () => {
   return (
     <>
       <Head>
-        <title>Iniciar Sesión | Profer</title>
+        <title>Iniciar Sesión | PROFER</title>
       </Head>
       <Box
         component="main"

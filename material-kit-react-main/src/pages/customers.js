@@ -9,7 +9,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        Profesores | Encontrá tu profesor ideal
+        Buscar Clase | Tu clase a un click
       </title>
     </Head>
     <Box

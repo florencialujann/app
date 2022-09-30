@@ -10,7 +10,7 @@ import {
 import { Search as SearchIcon } from '../../icons/search';
 import { Upload as UploadIcon } from '../../icons/upload';
 import { Download as DownloadIcon } from '../../icons/download';
-
+//Buscar Clases
 export const CustomerListToolbar = (props) => (
   <Box {...props}>
     <Box
@@ -26,21 +26,9 @@ export const CustomerListToolbar = (props) => (
         sx={{ m: 1 }}
         variant="h4"
       >
-        Profesores
+        Buscar Clases
       </Typography>
       <Box sx={{ m: 1 }}>
-        <Button
-          startIcon={(<UploadIcon fontSize="small" />)}
-          sx={{ mr: 1 }}
-        >
-          Precio
-        </Button>
-        <Button
-          startIcon={(<DownloadIcon fontSize="small" />)}
-          sx={{ mr: 1 }}
-        >
-          Precio
-        </Button>
         <Button
           color="primary"
           variant="contained"
@@ -74,5 +62,6 @@ export const CustomerListToolbar = (props) => (
         </CardContent>
       </Card>
     </Box>
+    
   </Box>
 );

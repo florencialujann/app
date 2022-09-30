@@ -27,12 +27,12 @@ const items = [
   {
     href: '/customers',
     icon: (<UsersIcon fontSize="small" />),
-    title: 'Profesores'
+    title: 'Buscar Clases'
   },
   {
     href: '/products',
     icon: (<Class fontSize="small" />),
-    title: 'Clases'
+    title: 'Mis Clases'
   },
   {
     href: '/account',
@@ -132,9 +132,6 @@ export const DashboardSidebar = (props) => {
                   color="neutral.400"
                   variant="body2"
                 >
-                  Cuenta
-                  {' '}
-                  : Premium
                 </Typography>
               </div>
               <SelectorIcon

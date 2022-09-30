@@ -8,7 +8,7 @@ const Page = () => (
   <>
     <Head>
       <title>
-        Mi Perfil
+        Mi Perfil | PROFER
       </title>
     </Head>
     <Box

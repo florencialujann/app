@@ -18,13 +18,13 @@ export const TasksProgress = (props) => (
             gutterBottom
             variant="overline"
           >
-            TASKS PROGRESS
+            Progreso de Cursos
           </Typography>
           <Typography
             color="textPrimary"
             variant="h4"
           >
-            75.5%
+            90.5%
           </Typography>
         </Grid>
         <Grid item>
@@ -41,7 +41,7 @@ export const TasksProgress = (props) => (
       </Grid>
       <Box sx={{ pt: 3 }}>
         <LinearProgress
-          value={75.5}
+          value={90.5}
           variant="determinate"
         />
       </Box>

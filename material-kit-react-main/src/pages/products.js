@@ -4,12 +4,12 @@ import { products } from '../__mocks__/products';
 import { ProductListToolbar } from '../components/product/product-list-toolbar';
 import { ProductCard } from '../components/product/product-card';
 import { DashboardLayout } from '../components/dashboard-layout';
-
+//Mis Clases
 const Page = () => (
   <>
     <Head>
       <title>
-        Clases | PROFER
+        Mis Clases | PROFER
       </title>
     </Head>
     <Box
@@ -22,6 +22,24 @@ const Page = () => (
       <Container maxWidth={false}>
         <ProductListToolbar />
         <Box sx={{ pt: 3 }}>
+          <Grid
+            container
+            spacing={3}
+          >
+            {products.map((product) => (
+              <Grid
+                item
+                key={product.id}
+                lg={4}
+                md={6}
+                xs={12}
+              >
+                <ProductCard product={product} />
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
+                <Box sx={{ pt: 3 }}>
           <Grid
             container
             spacing={3}
@@ -53,6 +71,8 @@ const Page = () => (
           />
         </Box>
       </Container>
+
+      
     </Box>
   </>
 );

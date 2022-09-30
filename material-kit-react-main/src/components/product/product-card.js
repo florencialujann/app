@@ -4,7 +4,9 @@ import { Clock as ClockIcon } from '../../icons/clock';
 import { Download as DownloadIcon } from '../../icons/download';
 
 export const ProductCard = ({ product, ...rest }) => (
+  
   <Card
+     
     sx={{
       display: 'flex',
       flexDirection: 'column',
@@ -20,11 +22,7 @@ export const ProductCard = ({ product, ...rest }) => (
           pb: 3
         }}
       >
-        <Avatar
-          alt="Product"
-          src={product.media}
-          variant="square"
-        />
+        
       </Box>
       <Typography
         align="center"
@@ -39,9 +37,12 @@ export const ProductCard = ({ product, ...rest }) => (
         color="textPrimary"
         variant="body1"
       >
-        {product.description}
+        {product.description},
+        {product.frecuencia},
+        {product.precio},
       </Typography>
     </CardContent>
+    
     <Box sx={{ flexGrow: 1 }} />
     <Divider />
     <Box sx={{ p: 2 }}>
@@ -89,6 +90,9 @@ export const ProductCard = ({ product, ...rest }) => (
       </Grid>
     </Box>
   </Card>
+
+  
+  
 );
 
 ProductCard.propTypes = {

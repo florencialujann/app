@@ -16,13 +16,14 @@ export const TotalCustomers = (props) => (
             gutterBottom
             variant="overline"
           >
-            PROFESORES
+            Clases Activas del Mes
           </Typography>
           <Typography
             color="textPrimary"
             variant="h4"
           >
-            2,3k
+            3
+            <p> </p>
           </Typography>
         </Grid>
         <Grid item>
@@ -57,7 +58,7 @@ export const TotalCustomers = (props) => (
           color="textSecondary"
           variant="caption"
         >
-          Since last month
+          Del último mes
         </Typography>
       </Box>
     </CardContent>

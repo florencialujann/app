@@ -11,7 +11,7 @@ import {
 import { Download as DownloadIcon } from '../../icons/download';
 import { Search as SearchIcon } from '../../icons/search';
 import { Upload as UploadIcon } from '../../icons/upload';
-
+//Mis Clases
 export const ProductListToolbar = (props) => (
   <Box {...props}>
     <Box
@@ -27,14 +27,14 @@ export const ProductListToolbar = (props) => (
         sx={{ m: 1 }}
         variant="h4"
       >
-        Clases
+        Mis Clases
       </Typography>
       <Box sx={{ m: 1 }}>
         <Button
           color="primary"
           variant="contained"
         >
-          Agregar Clases
+          Agregar Clase
         </Button>
       </Box>
     </Box>
@@ -56,7 +56,7 @@ export const ProductListToolbar = (props) => (
                   </InputAdornment>
                 )
               }}
-              placeholder="Buscar Clases"
+              placeholder="Buscar Clases..."
               variant="outlined"
             />
           </Box>
