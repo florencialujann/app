@@ -98,6 +98,9 @@ export const CustomerListResults = ({ customers, ...rest }) => {
                 <TableCell>
                   Calificación
                 </TableCell>
+                <TableCell>
+                  Contactar
+                </TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -149,6 +152,9 @@ export const CustomerListResults = ({ customers, ...rest }) => {
                   </TableCell>
                   <TableCell>
                     {customer.calificacion}
+                  </TableCell>
+                  <TableCell>
+                    {customer.contactar}
                   </TableCell>
                 </TableRow>
               ))}

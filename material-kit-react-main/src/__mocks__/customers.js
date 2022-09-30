@@ -13,6 +13,7 @@ export const customers = [
     tipo: 'Individual', //filtro
     frecuencia: 'Semanal', //filtro
     calificacion: '5', //filtro
+    contactar: 'Seré Botón'
     
 
   },
@@ -28,6 +29,7 @@ export const customers = [
     tipo: 'Individual', //filtro
     frecuencia: 'Semanal', //filtro
     calificacion: '5', //filtro
+    contactar: 'Seré Botón'
   },
   {
     id: uuid(),
@@ -41,6 +43,7 @@ export const customers = [
     tipo: 'Individual', //filtro
     frecuencia: 'Mensual', //filtro
     calificacion: '4.6', //filtro
+    contactar: 'Seré Botón'
   },
   {
     id: uuid(),
@@ -54,6 +57,7 @@ export const customers = [
     tipo: 'Grupal', //filtro
     frecuencia: 'Mensual', //filtro
     calificacion: '4.9', //filtro
+    contactar: 'Seré Botón'
   },
   {
     id: uuid(),
@@ -67,6 +71,7 @@ export const customers = [
     tipo: 'Grupal', //filtro
     frecuencia: 'Diaria', //filtro
     calificacion: '3.7', //filtro
+    contactar: 'Seré Botón'
   },
   {
     id: uuid(),
@@ -80,6 +85,7 @@ export const customers = [
     tipo: 'Individual', //filtro
     frecuencia: 'Semanal', //filtro
     calificacion: '3.9', //filtro
+    contactar: 'Seré Botón'
   },
   {
     id: uuid(),
@@ -93,6 +99,7 @@ export const customers = [
     tipo: 'Individual', //filtro
     frecuencia: 'Semanal', //filtro
     calificacion: '4.4', //filtro
+    contactar: 'Seré Botón'
   },
   {
     id: uuid(),
@@ -106,6 +113,7 @@ export const customers = [
     tipo: 'Grupal', //filtro
     frecuencia: 'Semanal', //filtro
     calificacion: '3.5', //filtro
+    contactar: 'Seré Botón'
   },
   {
     id: uuid(),
@@ -119,6 +127,7 @@ export const customers = [
     tipo: 'Individual', //filtro
     frecuencia: 'Semanal', //filtro
     calificacion: '2.9', //filtro
+    contactar: 'Seré Botón'
   },
   {
     id: uuid(),
@@ -132,5 +141,6 @@ export const customers = [
     tipo: 'Grupal', //filtro
     frecuencia: 'Semanal', //filtro
     calificacion: '2.8', //filtro
+    contactar: 'Seré Botón'
   }
 ];

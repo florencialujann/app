@@ -39,7 +39,7 @@ export const ProductCard = ({ product, ...rest }) => (
       >
         {product.description},
         {product.frecuencia},
-        {product.precio},
+        
       </Typography>
     </CardContent>
     
