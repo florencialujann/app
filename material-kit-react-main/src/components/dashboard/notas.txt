@@ -1,0 +1,117 @@
+/Users/florenciarodriguez/app/material-kit-react-main/src/components/dashboard/traffic-by-device.js
+
+{/* <CardHeader title="Traffic by Device" />
+      <Divider />
+      <CardContent>
+        <Box
+          sx={{
+            height: 300,
+            position: 'relative'
+          }}
+        >
+          <Doughnut
+            data={data}
+            options={options}
+          />
+        </Box>
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            pt: 2
+          }}
+        >
+          {devices.map(({
+            color,
+            icon: Icon,
+            title,
+            value
+          }) => (
+            <Box
+              key={title}
+              sx={{
+                p: 1,
+                textAlign: 'center'
+              }}
+            >
+              <Icon color="action" />
+              <Typography
+                color="textPrimary"
+                variant="body1"
+              >
+                {title}
+              </Typography>
+              <Typography
+                style={{ color }}
+                variant="h4"
+              >
+                {value}
+                %
+              </Typography>
+            </Box>
+          ))}
+        </Box>
+      </CardContent> */}
+
+
+
+
+
+
+
+
+
+
+/Users/florenciarodriguez/app/material-kit-react-main/src/components/dashboard/latest-products.js
+
+    {/* <CardHeader
+      subtitle={`${products.length} in total`}
+      title="Latest Products"
+    />
+    <Divider />
+    <List>
+      {products.map((product, i) => (
+        <ListItem
+          divider={i < products.length - 1}
+          key={product.id}
+        >
+          <ListItemAvatar>
+            <img
+              alt={product.name}
+              src={product.imageUrl}
+              style={{
+                height: 48,
+                width: 48
+              }}
+            />
+          </ListItemAvatar>
+          <ListItemText
+            primary={product.name}
+            secondary={`Updated ${formatDistanceToNow(product.updatedAt)}`}
+          />
+          <IconButton
+            edge="end"
+            size="small"
+          >
+            <MoreVertIcon />
+          </IconButton>
+        </ListItem>
+      ))}
+    </List>
+    <Divider />
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'flex-end',
+        p: 2
+      }}
+    >
+      <Button
+        color="primary"
+        endIcon={<ArrowRightIcon />}
+        size="small"
+        variant="text"
+      >
+        Mirar Todos
+      </Button>
+    </Box> */}

@@ -50,7 +50,20 @@ const products = [
 
 export const LatestProducts = (props) => (
   <Card {...props}>
-    <CardHeader
+    {
+      <Box>
+        <img
+              style={{
+                height: 650,
+                width: 450
+              }}
+              
+          alt="Estudia con Profer"
+              src="/static/images/proferSideBar.jpeg"
+        />
+      </Box>
+    }
+    {/* <CardHeader
       subtitle={`${products.length} in total`}
       title="Latest Products"
     />
@@ -100,6 +113,6 @@ export const LatestProducts = (props) => (
       >
         Mirar Todos
       </Button>
-    </Box>
+    </Box> */}
   </Card>
 );

@@ -4,6 +4,7 @@ import {
   Card,
   CardContent,
   TextField,
+  Text,
   InputAdornment,
   SvgIcon, Typography,
   TableCell,

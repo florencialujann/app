@@ -192,7 +192,7 @@ export const DashboardSidebar = (props) => {
           >
             <img
               alt="Go to pro"
-              src="/static/images/sidebar_pro.png"
+              src="/static/images/proferSideBar.jpeg"
             />
           </Box>
           <NextLink
