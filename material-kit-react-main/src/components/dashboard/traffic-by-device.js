@@ -68,12 +68,17 @@ export const TrafficByDevice = (props) => {
     <Card {...props}>
 
       <Box>
-        
+        <br></br>
+        <br></br>
+        <br></br>
         <h1>
           ¡Da clases!
           <br></br>
         ¡Viví de lo que te apasiona!
         </h1>
+        <br></br>
+        <br></br>
+        <br></br>
         <p>Independiente y sin intermediarios, enseñá en tu ciudad o barrio a alumnos geniales.
 <br></br>
 Idiomas, deportes, música, arte, ocio, apoyo escolar, ayuda con los deberes, materias académicas, más de 1000 materias para enseñar.

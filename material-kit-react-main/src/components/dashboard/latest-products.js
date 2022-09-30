@@ -54,8 +54,8 @@ export const LatestProducts = (props) => (
       <Box>
         <img
               style={{
-                height: 650,
-                width: 450
+                height: 550,
+                width: 350
               }}
               
           alt="Estudia con Profer"
