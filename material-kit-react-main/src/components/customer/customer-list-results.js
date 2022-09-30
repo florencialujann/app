@@ -84,19 +84,19 @@ export const CustomerListResults = ({ customers, ...rest }) => {
                   Nombre  
                 </TableCell>
                 <TableCell>
-                  Email
-                </TableCell>
-                <TableCell>
                   Materia
                 </TableCell>
                 <TableCell>
                   Precio
                 </TableCell>
                 <TableCell>
+                  Email
+                </TableCell>
+                <TableCell>
                   Teléfono
                 </TableCell>
                 <TableCell>
-                  Día de Registro
+                  Calificación
                 </TableCell>
               </TableRow>
             </TableHead>
@@ -136,19 +136,19 @@ export const CustomerListResults = ({ customers, ...rest }) => {
                     </Box>
                   </TableCell>
                   <TableCell>
-                    {customer.email}
-                  </TableCell>
-                  <TableCell>
                     {customer.materia}
                   </TableCell>
                   <TableCell>
                     {customer.precio}
                   </TableCell>
                   <TableCell>
+                    {customer.email}
+                  </TableCell>
+                  <TableCell>
                     {customer.phone}
                   </TableCell>
                   <TableCell>
-                    {format(customer.createdAt, 'dd/MM/yyyy')}
+                    {customer.calificacion}
                   </TableCell>
                 </TableRow>
               ))}

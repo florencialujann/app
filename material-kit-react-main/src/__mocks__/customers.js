@@ -12,7 +12,7 @@ export const customers = [
     materia: 'Química', //filtro
     tipo: 'Individual', //filtro
     frecuencia: 'Semanal', //filtro
-    
+    calificacion: '5', //filtro
     
 
   },
@@ -24,7 +24,10 @@ export const customers = [
     email: 'cao.yu@devias.io',
     name: 'Cao Yu',
     phone: '712-351-5711',
-    materia: 'Matemática'
+    materia: 'Matemática',
+    tipo: 'Individual', //filtro
+    frecuencia: 'Semanal', //filtro
+    calificacion: '5', //filtro
   },
   {
     id: uuid(),
@@ -34,17 +37,23 @@ export const customers = [
     email: 'alexa.richardson@devias.io',
     name: 'Alexa Richardson',
     phone: '770-635-2682',
-    materia: 'Filosofia'
+    materia: 'Filosofia',
+    tipo: 'Individual', //filtro
+    frecuencia: 'Mensual', //filtro
+    calificacion: '4.6', //filtro
   },
   {
     id: uuid(),
-    precio: '$3,000.00',
+    precio: '$4,500.00',
     avatarUrl: '/static/images/avatars/avatar_5.png',
     createdAt: 1554930000000,
     email: 'anje.keizer@devias.io',
     name: 'Anje Keizer',
     phone: '908-691-3242',
-    materia: 'Literatura'
+    materia: 'Literatura',
+    tipo: 'Grupal', //filtro
+    frecuencia: 'Mensual', //filtro
+    calificacion: '4.9', //filtro
   },
   {
     id: uuid(),
@@ -54,7 +63,10 @@ export const customers = [
     email: 'clarke.gillebert@devias.io',
     name: 'Clarke Gillebert',
     phone: '972-333-4106',
-    materia: 'Francés'
+    materia: 'Francés',
+    tipo: 'Grupal', //filtro
+    frecuencia: 'Diaria', //filtro
+    calificacion: '3.7', //filtro
   },
   {
     id: uuid(),
@@ -64,7 +76,10 @@ export const customers = [
     email: 'adam.denisov@devias.io',
     name: 'Adam Denisov',
     phone: '858-602-3409',
-    materia: 'Inglés'
+    materia: 'Inglés',
+    tipo: 'Individual', //filtro
+    frecuencia: 'Semanal', //filtro
+    calificacion: '3.9', //filtro
   },
   {
     id: uuid(),
@@ -74,7 +89,10 @@ export const customers = [
     email: 'ava.gregoraci@devias.io',
     name: 'Ava Gregoraci',
     phone: '415-907-2647',
-    materia: 'Python'
+    materia: 'Python',
+    tipo: 'Individual', //filtro
+    frecuencia: 'Semanal', //filtro
+    calificacion: '4.4', //filtro
   },
   {
     id: uuid(),
@@ -84,7 +102,10 @@ export const customers = [
     email: 'emilee.simchenko@devias.io',
     name: 'Emilee Simchenko',
     phone: '702-661-1654',
-    materia: 'HTML'
+    materia: 'HTML',
+    tipo: 'Grupal', //filtro
+    frecuencia: 'Semanal', //filtro
+    calificacion: '3.5', //filtro
   },
   {
     id: uuid(),
@@ -94,7 +115,10 @@ export const customers = [
     email: 'kwak.seong.min@devias.io',
     name: 'Kwak Seong-Min',
     phone: '313-812-8947',
-    materia: 'Análisis Matemático'
+    materia: 'Análisis Matemático',
+    tipo: 'Individual', //filtro
+    frecuencia: 'Semanal', //filtro
+    calificacion: '2.9', //filtro
   },
   {
     id: uuid(),
@@ -104,6 +128,9 @@ export const customers = [
     email: 'merrile.burgett@devias.io',
     name: 'Merrile Burgett',
     phone: '801-301-7894',
-    materia: 'Dibujo'
+    materia: 'Dibujo',
+    tipo: 'Grupal', //filtro
+    frecuencia: 'Semanal', //filtro
+    calificacion: '2.8', //filtro
   }
 ];

@@ -5,7 +5,10 @@ import {
   CardContent,
   TextField,
   InputAdornment,
-  SvgIcon, Typography
+  SvgIcon, Typography,
+  TableCell,
+  Checkbox,
+  TableRow,
 } from '@mui/material';
 import { Search as SearchIcon } from '../../icons/search';
 import { Upload as UploadIcon } from '../../icons/upload';
@@ -47,21 +50,39 @@ export const CustomerListToolbar = (props) => (
                 startAdornment: (
                   <InputAdornment position="start">
                     <SvgIcon
-                      color="action"
                       fontSize="small"
+                      color="action"
                     >
                       <SearchIcon />
                     </SvgIcon>
                   </InputAdornment>
                 )
               }}
-              placeholder="Buscar..."
+              placeholder="Buscar Clases..."
               variant="outlined"
             />
           </Box>
         </CardContent>
       </Card>
     </Box>
-    
+
+
+    <Box sx={{ mt: 3 }}>
+      <Card>
+        <CardContent>
+          <Box sx={{ maxWidth: 50 }}>
+           
+            <TextField
+              
+            />
+          </Box>
+        </CardContent>
+      </Card>
+    </Box>
+
+
+
+
+
   </Box>
 );
