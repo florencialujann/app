@@ -4,22 +4,7 @@ import { Clock as ClockIcon } from '../../icons/clock';
 import {Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Input, Label } from 'reactstrap';
 
 
-
-
-/* 
-state = {
-  abierto: false,
-   }
-      
-abrirModal = () =>
-  {
-    this.setState({ abierto: !this.state.abierto });
-  }
- */
-
-  
-//PROFESOR CARD
-export const ProductCard = ({ product, ...rest }) => (
+export const ProductAlumnoCard = ({ productAlumno, ...rest }) => (
   
   <Card
      
@@ -46,15 +31,15 @@ export const ProductCard = ({ product, ...rest }) => (
         gutterBottom
         variant="h5"
       >
-        {product.title}
+        {productAlumno.title}
       </Typography>
       <Typography
         align="center"
         color="textPrimary"
         variant="body1"
       >
-        {product.description},
-        {product.frecuencia},
+        {productAlumno.description},
+        {productAlumno.frecuencia},
         
       </Typography>
     </CardContent>
@@ -86,7 +71,7 @@ export const ProductCard = ({ product, ...rest }) => (
             <div>
               <div>
             {/* <Button color="primary" onClick={this.abrirModal}>Calificar Profesor</Button> */}
-            <Button color="primary">Ver mis Calificaciones</Button>
+            <Button color="primary">Calificar Profesor</Button>
             </div></div>
             {/* <Modal isOpen={this.state.abierto }>
               <ModalHeader>Calificar Profesor</ModalHeader>
@@ -123,6 +108,6 @@ export const ProductCard = ({ product, ...rest }) => (
   
 );
 
-ProductCard.propTypes = {
-  product: PropTypes.object.isRequired
+ProductAlumnoCard.propTypes = {
+  productAlumno: PropTypes.object.isRequired
 };

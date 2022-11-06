@@ -33,14 +33,17 @@ export const CustomerListToolbar = (props) => (
         Buscar Clases
       </Typography>
       <Box sx={{ m: 1 }}>
+        
         <Button
           color="primary"
           variant="contained"
         >
           Agregar Clase
         </Button>
+      
       </Box>
     </Box>
+
     <Box sx={{ mt: 3 }}>
       <Card>
         <CardContent>
@@ -69,12 +72,11 @@ export const CustomerListToolbar = (props) => (
 
 
     <Box sx={{ mt: 3 }}>
+      //tarjetas de las clases
       <Card>
         <CardContent>
           <Box sx={{ maxWidth: 50 }}>
-           
             <TextField
-              
             />
           </Box>
         </CardContent>

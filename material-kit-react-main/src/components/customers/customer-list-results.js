@@ -17,6 +17,7 @@ import {
 } from '@mui/material';
 import { getInitials } from '../../utils/get-initials';
 
+
 export const CustomerListResults = ({ customers, ...rest }) => {
   const [selectedCustomerIds, setSelectedCustomerIds] = useState([]);
   const [limit, setLimit] = useState(10);
@@ -154,7 +155,7 @@ export const CustomerListResults = ({ customers, ...rest }) => {
                     {customer.calificacion}
                   </TableCell>
                   <TableCell>
-                    {customer.contactar}
+                    <button>Contactar</button>
                   </TableCell>
                 </TableRow>
               ))}
