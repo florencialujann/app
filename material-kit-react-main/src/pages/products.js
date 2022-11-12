@@ -1,3 +1,4 @@
+//Mis Clases
 import Head from 'next/head';
 import { Box, Container, Grid, Pagination } from '@mui/material';
 import { products } from '../__mocks__/products';
@@ -7,9 +8,10 @@ import { DashboardLayout } from '../components/dashboard-layout';
 import { productsAlumno } from '../__mocks__/productsAlumno';
 import { ProductAlumnoCard } from '../components/product/productAlumno-card';
 
-//Mis Clases
+
 const Page = () => (
   <>
+
     <Head>
       <title>
         Mis Clases | PROFER
@@ -17,20 +19,18 @@ const Page = () => (
     </Head>
     <Box
       component="main"
-      
       sx={{
         flexGrow: 1,
         py: 8,
       }}
     >
+    
+      {/* contenedor del cuerpo */}
       
-      <ProductListToolbar />
-
       <Container maxWidth={false}>
+        <ProductListToolbar />
       <h3>Mis Clases como Profesor</h3>
       <Container maxWidth={false}>
-        
-        
         <Box sx={{ pt: 3 }}>
           <Grid
             container

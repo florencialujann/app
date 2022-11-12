@@ -1,4 +1,6 @@
-import {
+//Buscar Clases 
+import
+  {
   Box,
   Button,
   Card,
@@ -70,9 +72,8 @@ export const CustomerListToolbar = (props) => (
       </Card>
     </Box>
 
-
+    {/* tarjetas de las clases */}
     <Box sx={{ mt: 3 }}>
-      //tarjetas de las clases
       <Card>
         <CardContent>
           <Box sx={{ maxWidth: 50 }}>
@@ -82,9 +83,6 @@ export const CustomerListToolbar = (props) => (
         </CardContent>
       </Card>
     </Box>
-
-
-
 
 
   </Box>

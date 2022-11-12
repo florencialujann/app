@@ -1,3 +1,4 @@
+//Buscar Clases. tabla datos profesores disponibles 
 import { useState } from 'react';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import PropTypes from 'prop-types';
