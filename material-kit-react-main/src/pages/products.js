@@ -29,7 +29,9 @@ const Page = () => (
       
       <Container maxWidth={false}>
         <ProductListToolbar />
-      <h3>Mis Clases como Profesor</h3>
+        <Box color="#315466" sx={{ pt: 3 }}>
+          <h3>Mis Clases como Profesor</h3>
+          </Box>
       <Container maxWidth={false}>
         <Box sx={{ pt: 3 }}>
           <Grid
@@ -66,11 +68,10 @@ const Page = () => (
       </Container>
 
 <Container maxWidth={false}>
-  <h3>Mis Clases como Alumno</h3>
-      
+  <Box color="#315466" sx={{ pt: 3 }}>
+          <h3>Mis Clases como Alumno</h3>
+  </Box>
       <Container maxWidth={false}>
-        
-       
                 <Box sx={{ pt: 3 }}>
           <Grid
             container

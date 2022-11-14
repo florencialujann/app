@@ -70,9 +70,22 @@ export const ProductAlumnoCard = ({ productAlumno, ...rest }) => (
           >
             <div>
               <div>
-            {/* <Button color="primary" onClick={this.abrirModal}>Calificar Profesor</Button> */}
-            <Button color="primary">Calificar Profesor</Button>
-            </div></div>
+               <Box
+                  sx={{
+                  display: 'flex',
+                  justifyContent: 'flex-end',
+                  p: 2
+                  }}
+                >
+                  <Button
+                    color="primary"
+                    variant="contained"
+                  >
+                  Calificar Profesor
+                  </Button>
+                </Box>
+              </div>
+            </div>
             {/* <Modal isOpen={this.state.abierto }>
               <ModalHeader>Calificar Profesor</ModalHeader>
               <ModalBody>

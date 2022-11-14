@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Avatar, Box, Card, CardContent, Divider, Grid, Typography } from '@mui/material';
 import { Clock as ClockIcon } from '../../icons/clock';
 import {Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Input, Label } from 'reactstrap';
-
+import NextLink from 'next/link';
 
 
 
@@ -86,7 +86,16 @@ export const ProductCard = ({ product, ...rest }) => (
             <div>
               <div>
             {/* <Button color="primary" onClick={this.abrirModal}>Calificar Profesor</Button> */}
-            <Button color="primary">Ver mis Calificaciones</Button>
+            <NextLink
+            href="/"
+            passHref
+          >
+            <Button
+              component="a"
+            >
+              Ver mis Calificaciones
+            </Button>
+          </NextLink>
             </div></div>
             {/* <Modal isOpen={this.state.abierto }>
               <ModalHeader>Calificar Profesor</ModalHeader>
