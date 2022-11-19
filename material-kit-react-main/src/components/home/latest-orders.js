@@ -1,4 +1,4 @@
-import { format } from 'date-fns';
+/* import { format } from 'date-fns';
 import { v4 as uuid } from 'uuid';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import {
@@ -160,3 +160,4 @@ export const LatestOrders = (props) => (
     </Box>
   </Card>
 );
+ */

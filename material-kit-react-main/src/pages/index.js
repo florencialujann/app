@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import { Box, Container, Grid } from '@mui/material';
-//import { Budget } from '../components/dashboard/budget';
-import { LatestOrders } from '../components/dashboard/latest-orders';
-import { LatestProducts } from '../components/dashboard/latest-products';
-import { Sales } from '../components/dashboard/sales';
+import { Buscador } from '../components/home/Buscador';
+//import { LatestOrders } from '../components/dashboard/latest-orders';
+import { LatestProducts } from '../components/home/latest-products';
+//import { Sales } from '../components/dashboard/sales';
 //import { TasksProgress } from '../components/dashboard/tasks-progress';
 //import { TotalCustomers } from '../components/dashboard/total-customers';
 //import { TotalProfit } from '../components/dashboard/total-profit';
-import { TrafficByDevice } from '../components/dashboard/traffic-by-device';
+import { TrafficByDevice } from '../components/home/traffic-by-device';
 import { DashboardLayout } from '../components/dashboard-layout';
 
 const Page = () => (
@@ -31,20 +31,20 @@ const Page = () => (
         >
           <Grid
             item
-            lg={3}
+            lg={12}
             sm={6}
             xl={3}
             xs={12}
           >
-            {/* <Budget />
+            <Buscador />
           </Grid>
           <Grid
             item
-            xl={3}
-            lg={3}
-            sm={6}
-            xs={12}
-          > */}
+            xl={30}
+            lg={30}
+            sm={60}
+            xs={120}
+          >
             {/* <TotalCustomers />
           </Grid>
           <Grid
@@ -72,7 +72,7 @@ const Page = () => (
             xl={9}
             xs={12}
           > */}
-            <Sales />
+          {/*   <Sales /> */}
           </Grid>
           <Grid
             item
@@ -99,7 +99,7 @@ const Page = () => (
             xl={9}
             xs={12}
           >
-            <LatestOrders />
+            {/* <LatestOrders /> */}
           </Grid>
         </Grid>
       </Container>

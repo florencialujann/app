@@ -1,19 +1,32 @@
-/* import { Avatar, Box, Card, CardContent, Grid, Typography } from '@mui/material';
+import { Avatar, Box, Card, CardContent, Grid, Typography,TextField,Button } from '@mui/material';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import MoneyIcon from '@mui/icons-material/Money';
 
-export const Budget = (props) => (
+export const Buscador = (props) => (
   <Card
     sx={{ height: '100%' }}
     {...props}
   >
     <CardContent>
       <Grid
+      
         container
         spacing={3}
-        sx={{ justifyContent: 'space-between' }}
+        //sx={{ justifyContent: 'center' }}
+        sx={{ 
+          justifyContent: 'center' 
+      
+      
+      
+      
+      
+      }}
+        
       >
-        <Grid item>
+        <TextField id="outlined-basic" label="Seleccionar clase" variant="outlined" />
+        <Button variant="contained">Buscar</Button> 
+
+       {/*  <Grid item>
           <Typography
             color="textSecondary"
             gutterBottom
@@ -21,14 +34,17 @@ export const Budget = (props) => (
           >
             NUEVO USUARIOS 
           </Typography>
+          
           <Typography
             color="textPrimary"
             variant="h4"
           >
             1,5k
           </Typography>
-        </Grid>
-        <Grid item>
+        </Grid> */}
+        
+        
+        {/* <Grid item>
           <Avatar
             sx={{
               backgroundColor: 'success.main',
@@ -38,16 +54,18 @@ export const Budget = (props) => (
           >
             <MoneyIcon />
           </Avatar>
-        </Grid>
+        </Grid> */}
       </Grid>
-      <Box
+   {/*    <Box
+      
         sx={{
           pt: 2,
-          display: 'flex',
-          alignItems: 'center'
+          JustifyContent: 'center',
+          
         }}
       >
-        <ArrowDownwardIcon color="success" />
+        </Box> */}
+        {/* <ArrowDownwardIcon color="success" />
         <Typography
           color="success"
           sx={{
@@ -62,9 +80,7 @@ export const Budget = (props) => (
           variant="caption"
         >
           Del último mes
-        </Typography>
-      </Box>
+        </Typography> */}
     </CardContent>
   </Card>
 );
- */
