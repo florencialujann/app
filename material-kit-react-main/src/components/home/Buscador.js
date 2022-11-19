@@ -4,22 +4,20 @@ import MoneyIcon from '@mui/icons-material/Money';
 
 export const Buscador = (props) => (
   <Card
+    
     sx={{ height: '100%' }}
     {...props}
   >
     <CardContent>
       <Grid
-      
+        
         container
-        spacing={3}
+        spacing={0}
+        
         //sx={{ justifyContent: 'center' }}
         sx={{ 
-          justifyContent: 'center' 
-      
-      
-      
-      
-      
+          justifyContent: 'center' ,
+          
       }}
         
       >
