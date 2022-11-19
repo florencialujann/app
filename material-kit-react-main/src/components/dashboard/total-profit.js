@@ -1,4 +1,4 @@
-import { Avatar, Card, CardContent, Grid, Typography } from '@mui/material';
+/* import { Avatar, Card, CardContent, Grid, Typography } from '@mui/material';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 
 export const TotalProfit = (props) => (
@@ -39,3 +39,4 @@ export const TotalProfit = (props) => (
     </CardContent>
   </Card>
 );
+ */
