@@ -17,7 +17,7 @@ import { Search as SearchIcon } from '../../icons/search';
 import { Upload as UploadIcon } from '../../icons/upload';
 import { Download as DownloadIcon } from '../../icons/download';
 //Buscar Clases
-export const CustomerListToolbar = (props) => (
+export const ClaseListToolbar = (props) => (
   <Box {...props}>
     <Box
       sx={{

@@ -30,7 +30,7 @@ const items = [
     title: 'Buscar Clases'
   },
   {
-    href: '/products',
+    href: '/clases',
     icon: (<Class fontSize="small" />),
     title: 'Mis Clases'
   },

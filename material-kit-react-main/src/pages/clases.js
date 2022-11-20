@@ -1,11 +1,11 @@
 //Mis Clases
 import Head from 'next/head';
 import { Box, Container, Grid, Pagination } from '@mui/material';
-import { products } from '../__mocks__/products';
+import { misClases } from '../__mocks__/misclases';
 import { ProductListToolbar } from '../components/product/product-list-toolbar';
-import { ProductCard } from '../components/product/product-card';
+import { ProductCard } from '../components/product/misClasesP-card';
 import { DashboardLayout } from '../components/dashboard-layout';
-import { productsAlumno } from '../__mocks__/productsAlumno';
+import { misClasesAlumno } from '../__mocks__/misClasesAlumno';
 import { ProductAlumnoCard } from '../components/product/productAlumno-card';
 
 
@@ -38,7 +38,7 @@ const Page = () => (
             container
             spacing={3}
           >
-            {products.map((product) => (
+            {misClases.map((product) => (
               <Grid
                 item
                 key={product.id}
@@ -77,7 +77,7 @@ const Page = () => (
             container
             spacing={3}
           >
-            {productsAlumno.map((productAlumno) => (
+            {misClasesAlumno.map((productAlumno) => (
               <Grid
                 item
                 key={productAlumno.id}

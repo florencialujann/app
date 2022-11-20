@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import { Box, Container } from '@mui/material';
 import { ClaseListResults } from '../components/buscarClases/clase-list-results';
-import { CustomerListToolbar } from '../components/buscarClases/customer-list-toolbar';
+import { ClaseListToolbar } from '../components/buscarClases/clase-list-toolbar';
 import { DashboardLayout } from '../components/dashboard-layout';
 import { Clases } from '../__mocks__/clases';
 
@@ -21,7 +21,7 @@ const Page = () => (
       }}
     >
       <Container maxWidth={false}>
-        <CustomerListToolbar />
+        <ClaseListToolbar />
         <Box sx={{ mt: 3}}>
           <ClaseListResults clases={Clases} />
         </Box>
