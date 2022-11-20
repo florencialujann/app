@@ -25,7 +25,7 @@ const items = [
     title: 'Inicio'
   },
   {
-    href: '/customers',
+    href: '/buscarClases',
     icon: (<UsersIcon fontSize="small" />),
     title: 'Buscar Clases'
   },

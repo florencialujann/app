@@ -1,10 +1,10 @@
 //Buscar Clase
 import Head from 'next/head';
 import { Box, Container } from '@mui/material';
-import { CustomerListResults } from '../components/customers/customer-list-results';
-import { CustomerListToolbar } from '../components/customers/customer-list-toolbar';
+import { ClaseListResults } from '../components/buscarClases/clase-list-results';
+import { CustomerListToolbar } from '../components/buscarClases/customer-list-toolbar';
 import { DashboardLayout } from '../components/dashboard-layout';
-import { customers } from '../__mocks__/customers';
+import { Clases } from '../__mocks__/clases';
 
 const Page = () => (
   <>
@@ -23,7 +23,7 @@ const Page = () => (
       <Container maxWidth={false}>
         <CustomerListToolbar />
         <Box sx={{ mt: 3}}>
-          <CustomerListResults customers={customers} />
+          <ClaseListResults clases={Clases} />
         </Box>
       </Container>
     </Box>

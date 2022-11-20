@@ -19,41 +19,41 @@ import {
 import { getInitials } from '../../utils/get-initials';
 
 
-export const CustomerListResults = ({ customers, ...rest }) => {
-  const [selectedCustomerIds, setSelectedCustomerIds] = useState([]);
+export const ClaseListResults = ({ clases, ...rest }) => {
+  const [selectedClaseID, setSelectedClaseID] = useState([]);
   const [limit, setLimit] = useState(10);
   const [page, setPage] = useState(0);
 
   const handleSelectAll = (event) => {
-    let newSelectedCustomerIds;
+    let newSelectedClaseID;
 
     if (event.target.checked) {
-      newSelectedCustomerIds = customers.map((customer) => customer.id);
+      newSelectedClaseID = clases.map((clase) => clase.id);
     } else {
-      newSelectedCustomerIds = [];
+      newSelectedClaseID = [];
     }
 
-    setSelectedCustomerIds(newSelectedCustomerIds);
+    setSelectedClaseID(newSelectedClaseID);
   };
 
   const handleSelectOne = (event, id) => {
-    const selectedIndex = selectedCustomerIds.indexOf(id);
-    let newSelectedCustomerIds = [];
+    const selectedIndex = selectedClaseID.indexOf(id);
+    let newSelectedClaseID = [];
 
     if (selectedIndex === -1) {
-      newSelectedCustomerIds = newSelectedCustomerIds.concat(selectedCustomerIds, id);
+      newSelectedClaseID = newSelectedClaseID.concat(selectedClaseID, id);
     } else if (selectedIndex === 0) {
-      newSelectedCustomerIds = newSelectedCustomerIds.concat(selectedCustomerIds.slice(1));
-    } else if (selectedIndex === selectedCustomerIds.length - 1) {
-      newSelectedCustomerIds = newSelectedCustomerIds.concat(selectedCustomerIds.slice(0, -1));
+      newSelectedClaseID = newSelectedClaseID.concat(selectedClaseID.slice(1));
+    } else if (selectedIndex === selectedClaseID.length - 1) {
+      newSelectedClaseID = newSelectedClaseID.concat(selectedClaseID.slice(0, -1));
     } else if (selectedIndex > 0) {
-      newSelectedCustomerIds = newSelectedCustomerIds.concat(
-        selectedCustomerIds.slice(0, selectedIndex),
-        selectedCustomerIds.slice(selectedIndex + 1)
+      newSelectedClaseID = newSelectedClaseID.concat(
+        selectedClaseID.slice(0, selectedIndex),
+        selectedClaseID.slice(selectedIndex + 1)
       );
     }
 
-    setSelectedCustomerIds(newSelectedCustomerIds);
+    setSelectedClaseID(newSelectedClaseID);
   };
 
   const handleLimitChange = (event) => {
@@ -73,11 +73,11 @@ export const CustomerListResults = ({ customers, ...rest }) => {
               <TableRow>
                 <TableCell padding="checkbox">
                   <Checkbox
-                    checked={selectedCustomerIds.length === customers.length}
+                    checked={selectedClaseID.length === clases.length}
                     color="primary"
                     indeterminate={
-                      selectedCustomerIds.length > 0
-                      && selectedCustomerIds.length < customers.length
+                      selectedClaseID.length > 0
+                      && selectedClaseID.length < clases.length
                     }
                     onChange={handleSelectAll}
                   />
@@ -106,16 +106,16 @@ export const CustomerListResults = ({ customers, ...rest }) => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {customers.slice(0, limit).map((customer) => (
+              {clases.slice(0, limit).map((clase) => (
                 <TableRow
                   hover
-                  key={customer.id}
-                  selected={selectedCustomerIds.indexOf(customer.id) !== -1}
+                  key={clase.id}
+                  selected={selectedClaseID.indexOf(clase.id) !== -1}
                 >
                   <TableCell padding="checkbox">
                     <Checkbox
-                      checked={selectedCustomerIds.indexOf(customer.id) !== -1}
-                      onChange={(event) => handleSelectOne(event, customer.id)}
+                      checked={selectedClaseID.indexOf(clase.id) !== -1}
+                      onChange={(event) => handleSelectOne(event, clase.id)}
                       value="true"
                     />
                   </TableCell>
@@ -127,33 +127,33 @@ export const CustomerListResults = ({ customers, ...rest }) => {
                       }}
                     >
                       <Avatar
-                        src={customer.avatarUrl}
+                        src={clase.avatarUrl}
                         sx={{ mr: 2 }}
                       >
-                        {getInitials(customer.name)}
+                        {getInitials(clase.name)}
                       </Avatar>
                       <Typography
                         color="textPrimary"
                         variant="body1"
                       >
-                        {customer.name}
+                        {clase.name}
                       </Typography>
                     </Box>
                   </TableCell>
                   <TableCell>
-                    {customer.materia}
+                    {clase.materia}
                   </TableCell>
                   <TableCell>
-                    {customer.precio}
+                    {clase.precio}
                   </TableCell>
                   <TableCell>
-                    {customer.email}
+                    {clase.email}
                   </TableCell>
                   <TableCell>
-                    {customer.phone}
+                    {clase.phone}
                   </TableCell>
                   <TableCell>
-                    {customer.calificacion}
+                    {clase.calificacion}
                   </TableCell>
                   <TableCell>
                     <button>Contactar</button>
@@ -166,7 +166,7 @@ export const CustomerListResults = ({ customers, ...rest }) => {
       </PerfectScrollbar>
       <TablePagination
         component="div"
-        count={customers.length}
+        count={clases.length}
         onPageChange={handlePageChange}
         onRowsPerPageChange={handleLimitChange}
         page={page}
@@ -177,6 +177,6 @@ export const CustomerListResults = ({ customers, ...rest }) => {
   );
 };
 
-CustomerListResults.propTypes = {
+ClaseListResults.propTypes = {
   customers: PropTypes.array.isRequired
 };
