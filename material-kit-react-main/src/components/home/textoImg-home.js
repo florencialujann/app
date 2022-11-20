@@ -5,8 +5,8 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import TabletIcon from '@mui/icons-material/Tablet';
 
 
-export const TrafficByDevice = (props) => {
-  const theme = useTheme();
+export const TextoImagenHome = (props) => {
+/*   const theme = useTheme();
 
   const data = {
     datasets: [
@@ -62,25 +62,25 @@ export const TrafficByDevice = (props) => {
       icon: PhoneIcon,
       color: '#FB8C00'
     }
-  ];
+  ]; */
 
   return (
     <Card {...props}>
-
+      
       <Box>
        
         <h1>
-          ¡Da clases!
+          Da clases
           <br></br>
-        ¡Viví de lo que te apasiona!
+          ¡Viví de lo que te apasiona!
         </h1>
         <br></br>
 
         <p>Independiente y sin intermediarios, enseñá en tu ciudad o barrio a alumnos geniales.
-<br></br>
-Idiomas, deportes, música, arte, ocio, apoyo escolar, ayuda con los deberes, materias académicas, más de 1000 materias para enseñar.
-<br></br>
-Estudiantes, profesores, maestras, profes, autodidactas, apasionados de la enseñanza...¡Sumate a la comunidad de Superprofes! Te esperamos </p>
+        <br></br>
+         Idiomas, deportes, música, arte, ocio, apoyo escolar, ayuda con los deberes, materias académicas, más de 1000 materias para enseñar.
+        <br></br>
+          Estudiantes, profesores, maestras, profes, autodidactas, apasionados de la enseñanza...¡Sumate a la comunidad de Superprofes! Te esperamos </p>
       </Box>
 <Box>
         <img
@@ -90,7 +90,7 @@ Estudiantes, profesores, maestras, profes, autodidactas, apasionados de la ense�
               }}
               
           alt="Estudia con Profer"
-              src="/static/images/imagenInicio.jpeg"
+              src="/static/images/claseVirtual/clases-ingles-online-nativos-1-cuadrada.jpeg"
         />
       </Box>
 
