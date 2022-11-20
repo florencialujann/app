@@ -10,7 +10,8 @@ import {
   List,
   ListItem,
   ListItemAvatar,
-  ListItemText
+  ListItemText,
+  Grid
 } from '@mui/material';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
@@ -48,22 +49,45 @@ const products = [
   }
 ];
 
-export const LatestProducts = (props) => (
+export const ConoceLasClases = (props) => (
   <Card {...props}>
     {
       <Box>
+        <h1>
+          Buscá tu clase
+          <br></br>
+        </h1>
+        
         <img
               style={{
                 height: 550,
                 width: 350
               }}
               
-          alt="Estudia con Profer"
-              src="/static/images/proferSideBar.jpeg"
+              alt="Estudia con Profer"
+              src="/static/images/claseVirtual/claseVirtualDibujoPRof.png"
         />
+        <Grid
+          container
+          spacing={1}>
+
+        
+          <Grid
+            item
+              xl={6}
+              lg={6}
+              sm={6}
+              xs={6}
+            >
+            <h6>Aún no estás registrado?</h6>
+            <Button variant="contained">Registrate</Button>
+            <h6>Iniciá sesión aquí</h6>
+            <Button variant="contained">Iniciar sesión</Button>
+          </Grid>
+        </Grid>
       </Box>
     }
-    {/* <CardHeader
+{/*     <CardHeader
       subtitle={`${products.length} in total`}
       title="Latest Products"
     />

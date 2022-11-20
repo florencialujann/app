@@ -7,17 +7,25 @@ export const Buscador = (props) => (
     sx={{ height: '100%' }}
     {...props}
   >
+    
     <CardContent>
       <Grid
         container
         spacing={0}
-        sx={{ justifyContent: 'center' }}
-      >
-        <TextField
+        
+        sx={{
+          justifyContent: 'center',
+
           
+        }}
+      >
+        
+        
+          
+        <TextField
           id="outlined-basic" label="Seleccionar clase" variant="outlined" />
         <Button variant="contained">Buscar</Button> 
-
+        
        {/*  <Grid item>
           <Typography
             color="textSecondary"
