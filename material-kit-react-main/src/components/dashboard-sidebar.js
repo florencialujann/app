@@ -174,7 +174,7 @@ export const DashboardSidebar = (props) => {
             Queres saber mas?
           </Typography>
           <Typography
-            color="neutral.500"
+            color="neutral.400"
             variant="body2"
           >
             Te contamos mas acerca de Profer
@@ -191,8 +191,8 @@ export const DashboardSidebar = (props) => {
             }}
           >
             <img
-              alt="Go to pro"
-              src="/static/images/proferSideBar.jpeg"
+              alt="educacion online en linea"
+              src="/static/images/claseVirtual/onlineEducation.jpeg"
             />
           </Box>
           <NextLink
@@ -200,7 +200,7 @@ export const DashboardSidebar = (props) => {
             passHref
           >
             <Button
-              color="secondary"
+              color="primary"
               component="a"
               endIcon={(<OpenInNewIcon />)}
               fullWidth
