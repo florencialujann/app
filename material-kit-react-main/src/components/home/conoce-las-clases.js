@@ -151,26 +151,32 @@ export const PublicidadAlumno = (props) => (
       <Box>
         <Grid
         >
-        <div align="justify">
-        <h1>
-          Buscá tu clase
+        
+        <div align="center">
+            <img
+              
+              width="900px"
+                style={{
+                display:"flex",
+              }}
+              
+              alt="Estudia con Profer"
+              src="/static/images/claseVirtual/clasesDesdeCaseCuadrada.jpeg"
+        />
+            
+            </div>
+          <div align="justify">
+            <h1>
+        
+              Buscá tu clase
           <br></br>
         </h1>
-
+        
         <p>Independiente y sin intermediarios, toma clases desde cualquier lugar con Exelentes profesores .
         <br></br>
          Idiomas, deportes, música, arte, ocio, apoyo escolar, ayuda con los deberes, materias académicas, más de 1000 materias para aprender.
         <br></br>
         ¡Sumate a la comunidad de Alumnos de Profer! Te esperamos </p>
-        </div>
-        <div align="center">
-        <img
-              style={{
-              }}
-              
-              alt="Estudia con Profer"
-              src="/static/images/claseVirtual/claseVirtualDibujoPRof.png"
-        />
         </div>
         </Grid>
       </Box>
