@@ -36,14 +36,7 @@ export const ClaseListToolbar = (props) => (
         Buscar Clases
       </Typography>
       <Box sx={{ m: 1 }}>
-        
-        <Button
-          color="primary"
-          variant="contained"
-        >
-          Agregar Clase
-        </Button>
-        
+    
       
       </Box>
     </Box>

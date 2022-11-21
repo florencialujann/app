@@ -11,6 +11,8 @@ import {
 import { Download as DownloadIcon } from '../../icons/download';
 import { Search as SearchIcon } from '../../icons/search';
 import { Upload as UploadIcon } from '../../icons/upload';
+import { AgregarClaseModal } from './popup-califcacion';
+
 //Mis Clases
 export const ProductListToolbar = (props) => (
   <Box {...props}>
@@ -29,13 +31,9 @@ export const ProductListToolbar = (props) => (
       >
         Mis Clases
       </Typography>
+      
       <Box sx={{ m: 1 }}>
-        <Button
-          color="primary"
-          variant="contained"
-        >
-          Agregar Clase
-        </Button>
+        <AgregarClaseModal/>
       </Box>
     </Box>
     <Box sx={{ mt: 3 }}>

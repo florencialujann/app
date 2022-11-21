@@ -17,6 +17,7 @@ import {
   Typography
 } from '@mui/material';
 import { getInitials } from '../../utils/get-initials';
+import FilterAltIcon from '@mui/icons-material/FilterAlt';
 
 
 export const ClaseListResults = ({ clases, ...rest }) => {
@@ -82,6 +83,7 @@ export const ClaseListResults = ({ clases, ...rest }) => {
                     onChange={handleSelectAll}
                   />
                 </TableCell>
+                <FilterAltIcon></FilterAltIcon>
                 <TableCell>
                   Nombre  
                 </TableCell>

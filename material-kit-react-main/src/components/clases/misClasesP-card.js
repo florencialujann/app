@@ -1,10 +1,26 @@
 import PropTypes from 'prop-types';
-import { Avatar, Box, Card, CardContent, Divider, Grid, Typography } from '@mui/material';
+import { Avatar, Box, Card, CardContent, Divider, Grid, Typography, Modal, Button } from '@mui/material';
 import { Clock as ClockIcon } from '../../icons/clock';
-import {Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Input, Label } from 'reactstrap';
+//import {Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Input, Label } from 'reactstrap';
+import NextLink from 'next/link';
+import { BasicModal } from './/popup-califcacion';
 
 
-export const ProductAlumnoCard = ({ productAlumno, ...rest }) => (
+/* 
+state = {
+  abierto: false,
+   }
+      
+abrirModal = () =>
+  {
+    this.setState({ abierto: !this.state.abierto });
+  }
+ */
+
+  
+//PROFESOR CARD
+
+export const ProductCard = ({ product, ...rest }) => (
   
   <Card
      
@@ -31,15 +47,15 @@ export const ProductAlumnoCard = ({ productAlumno, ...rest }) => (
         gutterBottom
         variant="h5"
       >
-        {productAlumno.title}
+        {product.title}
       </Typography>
       <Typography
         align="center"
         color="textPrimary"
         variant="body1"
       >
-        {productAlumno.description},
-        {productAlumno.frecuencia},
+        {product.description},
+        {product.frecuencia},
         
       </Typography>
     </CardContent>
@@ -60,8 +76,11 @@ export const ProductAlumnoCard = ({ productAlumno, ...rest }) => (
             display: 'flex'
           }}
         >
+
           
-          <Typography
+          
+          
+         {/*  <Typography
             color="textSecondary"
             display="inline"
             sx={{ pl: 1 }}
@@ -69,23 +88,19 @@ export const ProductAlumnoCard = ({ productAlumno, ...rest }) => (
             align='center'
           >
             <div>
-              <div>
-               <Box
-                  sx={{
-                  display: 'flex',
-                  justifyContent: 'flex-end',
-                  p: 2
-                  }}
-                >
-                  <Button
-                    color="primary"
-                    variant="contained"
-                  >
-                  Calificar Profesor
-                  </Button>
-                </Box>
-              </div>
-            </div>
+              <div> */}
+            {/* <Button color="primary" onClick={this.abrirModal}>Calificar Profesor</Button> */}
+            {/* <NextLink
+            href="/"
+            passHref
+          >
+            <Button
+              component="a"
+            >
+              Ver mis Calificaciones
+            </Button>
+          </NextLink>
+            </div></div> */}
             {/* <Modal isOpen={this.state.abierto }>
               <ModalHeader>Calificar Profesor</ModalHeader>
               <ModalBody>
@@ -111,7 +126,7 @@ export const ProductAlumnoCard = ({ productAlumno, ...rest }) => (
                     
             </Modal> */}
 
-          </Typography>
+          {/* </Typography> */}
         </Grid>
       </Grid>
     </Box>
@@ -121,6 +136,6 @@ export const ProductAlumnoCard = ({ productAlumno, ...rest }) => (
   
 );
 
-ProductAlumnoCard.propTypes = {
-  productAlumno: PropTypes.object.isRequired
+ProductCard.propTypes = {
+  product: PropTypes.object.isRequired
 };

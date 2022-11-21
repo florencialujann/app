@@ -2,11 +2,11 @@
 import Head from 'next/head';
 import { Box, Container, Grid, Pagination } from '@mui/material';
 import { misClases } from '../__mocks__/misclases';
-import { ProductListToolbar } from '../components/product/product-list-toolbar';
-import { ProductCard } from '../components/product/misClasesP-card';
+import { ProductListToolbar } from '../components/clases/product-list-toolbar';
+import { ProductCard } from '../components/clases/misClasesP-card';
 import { DashboardLayout } from '../components/dashboard-layout';
 import { misClasesAlumno } from '../__mocks__/misClasesAlumno';
-import { ProductAlumnoCard } from '../components/product/productAlumno-card';
+import { ProductAlumnoCard } from '../components/clases/productAlumno-card';
 
 
 const Page = () => (

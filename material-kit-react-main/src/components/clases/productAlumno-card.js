@@ -2,24 +2,10 @@ import PropTypes from 'prop-types';
 import { Avatar, Box, Card, CardContent, Divider, Grid, Typography } from '@mui/material';
 import { Clock as ClockIcon } from '../../icons/clock';
 import {Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Input, Label } from 'reactstrap';
-import NextLink from 'next/link';
+import { BasicModal } from './popup-califcacion';
 
 
-
-/* 
-state = {
-  abierto: false,
-   }
-      
-abrirModal = () =>
-  {
-    this.setState({ abierto: !this.state.abierto });
-  }
- */
-
-  
-//PROFESOR CARD
-export const ProductCard = ({ product, ...rest }) => (
+export const ProductAlumnoCard = ({ productAlumno, ...rest }) => (
   
   <Card
      
@@ -46,15 +32,15 @@ export const ProductCard = ({ product, ...rest }) => (
         gutterBottom
         variant="h5"
       >
-        {product.title}
+        {productAlumno.title}
       </Typography>
       <Typography
         align="center"
         color="textPrimary"
         variant="body1"
       >
-        {product.description},
-        {product.frecuencia},
+        {productAlumno.description},
+        {productAlumno.frecuencia},
         
       </Typography>
     </CardContent>
@@ -85,18 +71,17 @@ export const ProductCard = ({ product, ...rest }) => (
           >
             <div>
               <div>
-            {/* <Button color="primary" onClick={this.abrirModal}>Calificar Profesor</Button> */}
-            <NextLink
-            href="/"
-            passHref
-          >
-            <Button
-              component="a"
-            >
-              Ver mis Calificaciones
-            </Button>
-          </NextLink>
-            </div></div>
+               <Box
+                  sx={{
+                  display: 'flex',
+                  justifyContent: 'flex-end',
+                  p: 2
+                  }}
+                >
+                  <BasicModal></BasicModal>
+                </Box>
+              </div>
+            </div>
             {/* <Modal isOpen={this.state.abierto }>
               <ModalHeader>Calificar Profesor</ModalHeader>
               <ModalBody>
@@ -132,6 +117,6 @@ export const ProductCard = ({ product, ...rest }) => (
   
 );
 
-ProductCard.propTypes = {
-  product: PropTypes.object.isRequired
+ProductAlumnoCard.propTypes = {
+  productAlumno: PropTypes.object.isRequired
 };
