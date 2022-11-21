@@ -16,6 +16,7 @@ import
 import { Search as SearchIcon } from '../../icons/search';
 import { Upload as UploadIcon } from '../../icons/upload';
 import { Download as DownloadIcon } from '../../icons/download';
+import { Popup } from '../home/popup1'; 
 //Buscar Clases
 export const ClaseListToolbar = (props) => (
   <Box {...props}>
@@ -42,6 +43,7 @@ export const ClaseListToolbar = (props) => (
         >
           Agregar Clase
         </Button>
+        
       
       </Box>
     </Box>

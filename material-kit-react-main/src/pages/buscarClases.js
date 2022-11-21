@@ -5,6 +5,7 @@ import { ClaseListResults } from '../components/buscarClases/clase-list-results'
 import { ClaseListToolbar } from '../components/buscarClases/clase-list-toolbar';
 import { DashboardLayout } from '../components/dashboard-layout';
 import { Clases } from '../__mocks__/clases';
+import { Popup } from '../../src/components/home/popup1';
 
 const Page = () => (
   <>
@@ -22,7 +23,10 @@ const Page = () => (
     >
       <Container maxWidth={false}>
         <ClaseListToolbar />
-        <Box sx={{ mt: 3}}>
+        {/* <Popup>
+          <h1>Popup</h1>
+        </Popup> */}
+        <Box sx={{ mt: 3 }}>
           <ClaseListResults clases={Clases} />
         </Box>
       </Container>
