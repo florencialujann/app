@@ -151,7 +151,6 @@ export const PublicidadAlumno = (props) => (
       <Box>
         <Grid
         >
-        
         <div align="center">
             <img
               
