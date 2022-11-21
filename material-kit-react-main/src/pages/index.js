@@ -2,12 +2,12 @@ import Head from 'next/head';
 import { Box, Container, Grid, Button } from '@mui/material';
 import { Buscador } from '../components/home/Buscador';
 //import { LatestOrders } from '../components/dashboard/latest-orders';
-import { ConoceLasClases } from '../components/home/conoce-las-clases';
+import { PublicidadProfe, PublicidadAlumno } from '../components/home/conoce-las-clases';
 //import { Sales } from '../components/dashboard/sales';
 //import { TasksProgress } from '../components/dashboard/tasks-progress';
 //import { TotalCustomers } from '../components/dashboard/total-customers';
 //import { TotalProfit } from '../components/dashboard/total-profit';
-import { TextoImagenHome } from '../components/home/textoImg-home';
+//import { TextoImagenHome } from '../components/home/textoImg-home';
 import { DashboardLayout } from '../components/dashboard-layout';
 
 
@@ -29,6 +29,7 @@ const Page = () => (
         <div className="container">
           <Box
               sx={{
+                
                 display: 'flex',
                 mt: 2,
                 mx: 'auto',
@@ -50,15 +51,7 @@ const Page = () => (
           spacing={3}
         >
           {/* grid del box Buscador. todos en 12 hace que siempre ocupe toda la pagina */}
-          <Grid
-            item
-            lg={12}
-            sm={12}
-            xl={12}
-            xs={12}
-          >
-            <Buscador />
-          </Grid>
+          
           <Grid
             item
             xl={12}
@@ -97,15 +90,15 @@ const Page = () => (
             
 
           </Grid>
-          <Grid
+        {/*   <Grid
             item
             lg={6}
             md={6}
             xl={6}
             xs={12}
           >
-            <TextoImagenHome sx={{ height: '100%' }} />
-          </Grid>
+
+          </Grid> */}
 
           
           <Grid
@@ -115,9 +108,27 @@ const Page = () => (
             xl={6}
             xs={12}
           >
-            <ConoceLasClases sx={{ height: '100%' }} />
+            <PublicidadProfe sx={{ height: '100%' }} />
           </Grid>
 
+          <Grid
+           item
+           lg={6}
+           md={6}
+           xl={6}
+           xs={12}>
+      
+            <PublicidadAlumno sx={{ height: '100%' }} />
+          </Grid>
+          <Grid
+            item
+            lg={12}
+            sm={12}
+            xl={12}
+            xs={12}
+          >
+            <Buscador />
+          </Grid>
           {/* <Grid
             item
             lg={4}

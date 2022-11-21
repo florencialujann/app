@@ -49,41 +49,129 @@ const products = [
   }
 ];
 
-export const ConoceLasClases = (props) => (
+export const PublicidadProfe = (props) => (
   <Card {...props}>
     {
       <Box>
+        
+        <Grid
+        /* item
+        lg={6}
+        md={6}
+        xl={6}
+        xs={6} */>
+          <div align='center' >
+          <h1>
+            ¡Viví de lo que te apasiona!
+          </h1>
+          </div>
+          <div align="justify">
+
+            <p>Independiente y sin intermediarios, enseñá en tu ciudad o barrio a alumnos geniales.
+          <br></br>
+            Idiomas, deportes, música, arte, ocio, apoyo escolar, ayuda con los deberes, materias académicas, más de 1000 materias para enseñar.
+          <br></br>
+            Estudiantes, profesores, maestras, profes, autodidactas, apasionados de la enseñanza...¡Sumate a la comunidad de Superprofes! Te esperamos </p>
+            </div>
+            <div align='center' > 
+            <img
+              
+          alt="Estudia con Profer"
+              src="/static/images/claseVirtual/clases-ingles-online-nativos-1-cuadrada.jpeg"
+              
+        />
+        </div>
+        </Grid>
+        
+        
+        
+
+        
+
+        
+      </Box>
+    }
+{/*     <CardHeader
+      subtitle={`${products.length} in total`}
+      title="Latest Products"
+    />
+    <Divider />
+    <List>
+      {products.map((product, i) => (
+        <ListItem
+          divider={i < products.length - 1}
+          key={product.id}
+        >
+          <ListItemAvatar>
+            <img
+              alt={product.name}
+              src={product.imageUrl}
+              style={{
+                height: 48,
+                width: 48
+              }}
+            />
+          </ListItemAvatar>
+          <ListItemText
+            primary={product.name}
+            secondary={`Updated ${formatDistanceToNow(product.updatedAt)}`}
+          />
+          <IconButton
+            edge="end"
+            size="small"
+          >
+            <MoreVertIcon />
+          </IconButton>
+        </ListItem>
+      ))}
+    </List>
+    <Divider />
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'flex-end',
+        p: 2
+      }}
+    >
+      <Button
+        color="primary"
+        endIcon={<ArrowRightIcon />}
+        size="small"
+        variant="text"
+      >
+        Mirar Todos
+      </Button>
+    </Box> */}
+  </Card>
+);
+
+export const PublicidadAlumno = (props) => (
+  <Card {...props}>
+    {
+      <Box>
+        <Grid
+        >
+        <div align="justify">
         <h1>
           Buscá tu clase
           <br></br>
         </h1>
-        
+
+        <p>Independiente y sin intermediarios, toma clases desde cualquier lugar con Exelentes profesores .
+        <br></br>
+         Idiomas, deportes, música, arte, ocio, apoyo escolar, ayuda con los deberes, materias académicas, más de 1000 materias para aprender.
+        <br></br>
+        ¡Sumate a la comunidad de Alumnos de Profer! Te esperamos </p>
+        </div>
+        <div align="center">
         <img
               style={{
-                height: 550,
-                width: 350
               }}
               
               alt="Estudia con Profer"
               src="/static/images/claseVirtual/claseVirtualDibujoPRof.png"
         />
-        <Grid
-          container
-          spacing={1}>
-
-        
-          <Grid
-            item
-              xl={6}
-              lg={6}
-              sm={6}
-              xs={6}
-            >
-            <h6>Aún no estás registrado?</h6>
-            <Button variant="contained">Registrate</Button>
-            <h6>Iniciá sesión aquí</h6>
-            <Button variant="contained">Iniciar sesión</Button>
-          </Grid>
+        </div>
         </Grid>
       </Box>
     }

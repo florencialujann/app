@@ -4,7 +4,8 @@ import MoneyIcon from '@mui/icons-material/Money';
 
 export const Buscador = (props) => (
   <Card
-    sx={{ height: '100%' }}
+    sx={{ height: '100%',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)'}}
     {...props}
   >
     
@@ -20,12 +21,34 @@ export const Buscador = (props) => (
         }}
       >
         
-        
+        {/* <Grid
+            sx={{
+              justifyContent: 'center',
+
           
-        <TextField
-          id="outlined-basic" label="Seleccionar clase" variant="outlined" />
-        <Button variant="contained">Buscar</Button> 
-        
+            }}
+            >
+
+              
+              <div>
+                <h6>Aún no estás registrado?</h6>
+                <Button variant="contained">Registrate</Button>
+              </div>
+            
+          </Grid> */}
+          <Grid
+            /* item
+              xl={6}
+              lg={6}
+              sm={6}
+              xs={6}*/
+            > 
+            <h6>Iniciá sesión aquí</h6>
+            <Button variant="contained" href= "./login">Iniciar sesión</Button>
+          </Grid>
+
+
+
        {/*  <Grid item>
           <Typography
             color="textSecondary"
