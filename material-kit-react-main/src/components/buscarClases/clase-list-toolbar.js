@@ -66,19 +66,5 @@ export const ClaseListToolbar = (props) => (
         </CardContent>
       </Card>
     </Box>
-
-    {/* tarjetas de las clases */}
-    <Box sx={{ mt: 3 }}>
-      <Card>
-        <CardContent>
-          <Box sx={{ maxWidth: 50 }}>
-            <TextField
-            />
-          </Box>
-        </CardContent>
-      </Card>
-    </Box>
-
-
   </Box>
 );

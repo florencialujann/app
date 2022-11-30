@@ -37,14 +37,16 @@ export const Buscador = (props) => (
             
           </Grid> */}
           <Grid
+          spacing={3}
             /* item
               xl={6}
               lg={6}
               sm={6}
               xs={6}*/
             > 
-            <h6>Iniciá sesión aquí</h6>
+            
             <Button variant="contained" href= "./login">Iniciar sesión</Button>
+            <Button variant="contained" href= "./buscarClases">Ir a Buscar Clases</Button>
           </Grid>
 
 

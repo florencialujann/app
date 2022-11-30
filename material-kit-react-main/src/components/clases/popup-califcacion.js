@@ -1,20 +1,7 @@
-// import React from 'react';
-// import Popup from 'reactjs-popup';
-// import 'reactjs-popup/dist/index.css';
-// import 'material-kit-react-main/src/components/settings/settings-popup-calificacion';
-
-// export default () => (
-//   <Popup trigger={<button> Trigger</button>} position="right center">
-// 		<div>Califica a tu Profesor!!</div>
-// 		<div></div>
-//   </Popup>
-// );
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import Rating from '@mui/material/Rating';
 import {BasicRating} from '../clases/calificador';
 import TextField from '@mui/material/TextField';
 

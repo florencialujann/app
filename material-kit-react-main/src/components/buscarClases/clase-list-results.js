@@ -14,11 +14,12 @@ import {
   TableHead,
   TablePagination,
   TableRow,
-  Typography
+  Typography,
+  Button
 } from '@mui/material';
 import { getInitials } from '../../utils/get-initials';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
-import { FiltroModal } from './popups';
+import { FiltroCalificacion, FiltroClase, FiltroFrecuencia, FiltroModal, BasicModal, FiltroProfe } from './popups';
 
 
 export const ClaseListResults = ({ clases, ...rest }) => {
@@ -69,10 +70,10 @@ export const ClaseListResults = ({ clases, ...rest }) => {
   return (
     <Card {...rest}>
       <PerfectScrollbar>
-        <Box sx={{ minWidth: 1050 }}>
+        <Box sx={{ minWidth: 100 }}>
           <Table>
-            <TableHead>
-              <TableRow>
+            <TableHead >
+              <TableRow >
                 <TableCell padding="checkbox">
                   <Checkbox
                     checked={selectedClaseID.length === clases.length}
@@ -85,9 +86,33 @@ export const ClaseListResults = ({ clases, ...rest }) => {
                   />
                 </TableCell>
                 {/* <FilterAltIcon></FilterAltIcon> */}
-                <FiltroModal></FiltroModal>
+                
+                
+                <TableCell style={{textAlign: 'Center', color:'white'}} >
+                  <FiltroProfe></FiltroProfe>
+                </TableCell>
 
-                <TableCell>
+                <TableCell style={{textAlign: 'Center'}}>
+                  <FiltroModal></FiltroModal>
+                </TableCell>
+
+                <TableCell style={{textAlign: 'Center'}}>
+                  <FiltroClase></FiltroClase>
+                </TableCell>
+
+                <TableCell style={{textAlign: 'Center'}}>
+                  <FiltroCalificacion></FiltroCalificacion>
+                </TableCell>
+
+                <TableCell style={{textAlign: 'Center'}}>
+                  <FiltroFrecuencia></FiltroFrecuencia>
+                </TableCell>
+
+                <TableCell style={{textAlign: 'Center'}}>
+                </TableCell>
+
+
+                {/* <TableCell>
                   Nombre  
                 </TableCell>
                 <TableCell>
@@ -96,18 +121,18 @@ export const ClaseListResults = ({ clases, ...rest }) => {
                 <TableCell>
                   Precio
                 </TableCell>
-                <TableCell>
+               {/*  <TableCell>
                   Email
                 </TableCell>
                 <TableCell>
                   Teléfono
-                </TableCell>
-                <TableCell>
+                </TableCell> */}
+               {/*  <TableCell>
                   Calificación
                 </TableCell>
                 <TableCell>
                   Contactar
-                </TableCell>
+                </TableCell>  */}
               </TableRow>
             </TableHead>
             <TableBody>
@@ -145,24 +170,30 @@ export const ClaseListResults = ({ clases, ...rest }) => {
                       </Typography>
                     </Box>
                   </TableCell>
-                  <TableCell>
+                  <TableCell style={{textAlign: 'Center'}}>
                     {clase.materia}
                   </TableCell>
-                  <TableCell>
-                    {clase.precio}
+                  <TableCell style={{textAlign: 'Center'}}>
+                    {clase.tipo}
                   </TableCell>
-                  <TableCell>
+                  {/* <TableCell>
                     {clase.email}
-                  </TableCell>
-                  <TableCell>
+                  </TableCell> */}
+                  {/* <TableCell>
                     {clase.phone}
-                  </TableCell>
-                  <TableCell>
+                  </TableCell> */}
+                  <TableCell style={{textAlign: 'Center'}}>
                     {clase.calificacion}
                   </TableCell>
-                  <TableCell>
-                    <button>Contactar</button>
+
+                  <TableCell style={{textAlign: 'Center'}}>
+                    {clase.frecuencia}
                   </TableCell>
+
+                  <TableCell>
+                  <BasicModal></BasicModal>
+                  </TableCell>
+                  
                 </TableRow>
               ))}
             </TableBody>
