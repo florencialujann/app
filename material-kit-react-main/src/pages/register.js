@@ -11,38 +11,82 @@ import {
   FormHelperText,
   Link,
   TextField,
-  Typography
+  Select,
+  Typography,
+  MenuItem,
+  FormControl,
+  InputLabel
+  
 } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const Register = () => {
+  const PerfilUsuario = [];
+
+  const setRol = (event) => {
+    formik.values.rol = event.target.value;
+  };
+
+  const Registrar = () => {
+    PerfilUsuario = {
+      nombre : formik.values.firstName,
+      apellido : formik.values.lastName,
+      email : formik.values.email,
+      password : formik.values.password,
+      rol : formik.values.rol,
+      telefono : formik.values.telefono
+    }
+    globalThis.sessionStorage.setItem('PerfilUsuario', JSON.stringify(PerfilUsuario));
+    
+    Router
+        .push('/');
+        
+    };
+  
   const formik = useFormik({
+
     initialValues: {
       email: '',
       firstName: '',
       lastName: '',
       password: '',
+      telefono: '',
+      rol: '',
+      titulo: '',
       policy: false
     },
     validationSchema: Yup.object({
+
       email: Yup
         .string()
         .email('Must be a valid email')
         .max(255)
         .required(
-          'Email is required'),
+          'Email es requerido'),
       firstName: Yup
         .string()
         .max(255)
-        .required('First name is required'),
+        .required('nombre es requerido'),
       lastName: Yup
         .string()
         .max(255)
-        .required('Last name is required'),
+        .required('apellido es requerido'),
       password: Yup
         .string()
         .max(255)
-        .required('Password is required'),
+        .required('Password es requerido'),
+      telefono: Yup
+        .string()
+        .max(255)
+        .required('telefono es requerido'),
+      rol: Yup
+        .string()
+        .max(255) 
+        .required('rol es requerido'),
+      titulo: Yup
+        .string()
+        .max(255)
+        .required('titulo es requerido'),
       policy: Yup
         .boolean()
         .oneOf(
@@ -105,7 +149,7 @@ const Register = () => {
               error={Boolean(formik.touched.firstName && formik.errors.firstName)}
               fullWidth
               helperText={formik.touched.firstName && formik.errors.firstName}
-              label="Primer Nombre"
+              label="Nombre"
               margin="normal"
               name="firstName"
               onBlur={formik.handleBlur}
@@ -139,6 +183,19 @@ const Register = () => {
               variant="outlined"
             />
             <TextField
+              error={Boolean(formik.touched.telefono && formik.errors.telefono)}
+              fullWidth
+              helperText={formik.touched.telefono && formik.errors.telefono}
+              label="Numero de telefono"
+              margin="normal"
+              name="telefono"
+              onBlur={formik.handleBlur}
+              onChange={formik.handleChange}
+              value={formik.values.telefono}
+              variant="outlined"
+              
+            />
+            <TextField
               error={Boolean(formik.touched.password && formik.errors.password)}
               fullWidth
               helperText={formik.touched.password && formik.errors.password}
@@ -151,6 +208,19 @@ const Register = () => {
               value={formik.values.password}
               variant="outlined"
             />
+            <FormControl fullWidth>
+              <InputLabel id="tipodeusuario">rol</InputLabel>
+              <Select
+                labelId="tipodeusuario"
+                id="tipodeusuario"
+                label="Rol"
+                onChange={setRol}
+              >
+                <MenuItem value={"Profesor"}>Profesor</MenuItem>
+                <MenuItem value={"Alumno"}>Alumno</MenuItem>
+              </Select>
+            </FormControl>
+
             <Box
               sx={{
                 alignItems: 'center',
@@ -196,6 +266,7 @@ const Register = () => {
                 size="large"
                 type="submit"
                 variant="contained"
+                onClick={Registrar}
               >
                 Registrarme Ahora!
               </Button>
