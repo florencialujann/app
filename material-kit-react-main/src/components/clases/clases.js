@@ -111,7 +111,7 @@ const BasicModal = () => {
   );
 }
 
-export const AccountProfile = () => {
+export const Clases = () => {
   const PerfilUsuario = globalThis.sessionStorage.getItem('rol');
   if (PerfilUsuario == 'Alumno') {
     return (

@@ -4,8 +4,7 @@ import { Box, Container, Grid, Pagination } from '@mui/material';
 import { DashboardLayout } from '../components/dashboard-layout';
 import { misClasesAlumno } from '../__mocks__/misClasesAlumno';
 import { ProductAlumnoCard } from '../components/clases/productAlumno-card';
-import {clases} from '../components/clases';
-import { AccountProfile } from '../components/account/clases';
+import { Clases } from '../components/clases/clases';
 
 
 const Page = () => (
@@ -25,8 +24,7 @@ const Page = () => (
         py: 8,
       }}
     >
-      <AccountProfile />
-      <clases/>
+      <Clases />
     </Box>
     
   </>
