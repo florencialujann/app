@@ -36,7 +36,7 @@ const Register = () => {
       rol : formik.values.rol,
       telefono : formik.values.telefono
     }
-    globalThis.sessionStorage.setItem('PerfilUsuario', JSON.stringify(PerfilUsuario));
+    globalThis.sessionStorage.setItem('rol', PerfilUsuario.rol);
     
     Router
         .push('/');
