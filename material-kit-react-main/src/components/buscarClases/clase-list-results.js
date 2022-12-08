@@ -174,7 +174,7 @@ export const ClaseListResults = ({ clases, ...rest }) => {
                     {clase.materia}
                   </TableCell>
                   <TableCell style={{textAlign: 'Center'}}>
-                    {clase.tipo}
+                  {clase.tipo}
                   </TableCell>
                   {/* <TableCell>
                     {clase.email}

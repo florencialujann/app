@@ -10,13 +10,16 @@ export const AccountPopover = (props) => {
   const authContext = useContext(AuthContext);
 
   const handleSignOut = async () => {
-    onClose?.();
 
+    Router
+        .push('/login')
+        .catch(console.error);
+      onClose?.();
     // Check if authentication with Zalter is enabled
     // If not enabled, then redirect is not required
-    if (!ENABLE_AUTH) {
-      return;
-    }
+    // if (!ENABLE_AUTH) {
+    //   return;
+    // }
 
     // Check if auth has been skipped
     // From sign-in page we may have set "skip-auth" to "true"
@@ -31,6 +34,7 @@ export const AccountPopover = (props) => {
       Router
         .push('/sign-in')
         .catch(console.error);
+      onClose?.();
       return;
     }
 

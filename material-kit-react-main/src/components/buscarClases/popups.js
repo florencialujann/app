@@ -5,10 +5,13 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import Box from '@mui/material/Box';
+import {Box, Container, Grid, Typography } from '@mui/material';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
 import TextField from '@mui/material/TextField';
+import {AccountProfile} from './account-profile.js';
+import { AccountProfileDetails } from './account-profile-details.js';
+
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -308,8 +311,7 @@ export function FiltroModal() {
         position: 'absolute',
         top: '50%',
         left: '50%',
-        transform: 'translate(-50%, -50%)',
-        width: 400,
+        transform: 'translate(-50%, -50%)',        
         bgcolor: 'background.paper',
         border: '2px solid #000',
         boxShadow: 24,
@@ -331,15 +333,43 @@ export function BasicModal() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-            
-
-            <TextField
-          id="outlined-multiline-static"
-          label=""
-          multiline
-          rows={4}
-          defaultValue="Agregar un comentario"
-        />
+        <Box
+      component="main"
+      sx={{
+        flexGrow: 1,
+        py: 8
+      }}
+    >
+      <Container maxWidth="lg">
+        <Typography
+          sx={{ mb: 3 }}
+          variant="h4"
+        >
+          Detalle
+        </Typography>
+        <Grid
+          container
+          spacing={3}
+        >
+          <Grid
+            item
+            lg={4}
+            md={6}
+            xs={12}
+          >
+            <AccountProfile />
+          </Grid>
+          <Grid
+            item
+            lg={8}
+            md={6}
+            xs={12}
+          >
+            <AccountProfileDetails />
+          </Grid>
+        </Grid>
+      </Container>
+    </Box>
         <Button onClick={handleClose}>Enviar</Button>
           
         </Box>

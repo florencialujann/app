@@ -53,11 +53,6 @@ const items = [
     href: '/register',
     icon: (<UserAddIcon fontSize="small" />),
     title: 'Registrarse'
-  },
-  {
-    href: '/404',
-    icon: (<XCircleIcon fontSize="small" />),
-    title: 'Pagina no encontrada'
   }
 ];
 
@@ -85,6 +80,11 @@ export const DashboardSidebar = (props) => {
 
   const content = (
     <>
+      <Box>
+        <a>
+          
+        </a>
+      </Box>
       <Box
         sx={{
           display: 'flex',
@@ -93,22 +93,7 @@ export const DashboardSidebar = (props) => {
         }}
       >
         <div>
-          <Box sx={{ p: 3 }}>
-            <NextLink
-              href="/"
-              passHref
-            >
-              <a>
-                <Logo
-                  sx={{
-                    height: 42,
-                    width: 42
-                  }}
-                />
-              </a>
-            </NextLink>
-          </Box>
-          <Box sx={{ px: 2 }}>
+          <Box sx={{ px: 3 }}>
             <Box
               sx={{
                 alignItems: 'center',
@@ -134,13 +119,21 @@ export const DashboardSidebar = (props) => {
                 >
                 </Typography>
               </div>
-              <SelectorIcon
-                sx={{
-                  color: 'neutral.500',
-                  width: 14,
-                  height: 14
-                }}
-              />
+              <Box >
+            <NextLink
+              href="/"
+              passHref
+            >
+              <a>
+                <Logo
+                  sx={{
+                    height: 32,
+                    width: 32
+                  }}
+                />
+              </a>
+            </NextLink>
+          </Box>
             </Box>
           </Box>
         </div>
