@@ -11,6 +11,7 @@ import Modal from '@mui/material/Modal';
 import TextField from '@mui/material/TextField';
 import {AccountProfile} from './account-profile.js';
 import { AccountProfileDetails } from './account-profile-details.js';
+import { positions,right } from '@mui/system';
 
 
 const ITEM_HEIGHT = 48;
@@ -370,8 +371,14 @@ export function BasicModal() {
         </Grid>
       </Container>
     </Box>
-        <Button onClick={handleClose}>Enviar</Button>
-          
+    <Button
+            
+            color="primary"
+            variant="contained"
+            onClick={handleClose}
+          >
+            Cerrar
+          </Button>
         </Box>
       </Modal>
     </div>

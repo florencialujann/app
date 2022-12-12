@@ -7,7 +7,8 @@ import {
   CardHeader,
   Divider,
   Grid,
-  TextField
+  TextField,
+  Typography 
 } from '@mui/material';
 
 const states = [
@@ -66,16 +67,9 @@ export const AccountProfileDetails = (props) => {
               md={10}
               xs={12}
             >
-              <TextField
-                fullWidth
-                /*helperText="Please specify the first name"*/ 
-                label="Descripción de la clase"
-                name="nombre"
-                onChange={handleChange}
-                required
-                value={values.description}
-                variant="outlined"
-              />
+              <Typography >
+              {values.description}
+              </Typography>
             </Grid>
             <Grid
               item
@@ -188,12 +182,7 @@ export const AccountProfileDetails = (props) => {
             p: 2
           }}
         >
-          <Button
-            color="primary"
-            variant="contained"
-          >
-            Guardar detalles
-          </Button>
+          
         </Box>
       </Card>
     </form>

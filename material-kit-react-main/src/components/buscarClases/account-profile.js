@@ -6,7 +6,9 @@ import {
   CardActions,
   CardContent,
   Divider,
-  Typography
+  Typography,
+  Grid,
+  TextField
 } from '@mui/material';
 
 const user = {
@@ -15,7 +17,8 @@ const user = {
   country: 'Argentina',
   jobTitle: 'Senior Developer',
   name: 'Romina Perez',
-  rol: 'Profesor/a'
+  rol: 'Profesor/a',
+  experience: 'Graduado de Harvard',
 };
 
 export const AccountProfile = () => (
@@ -58,6 +61,21 @@ export const AccountProfile = () => (
       </Box>
     </CardContent>
     <Divider />
+    <Grid
+    item
+    
+    xs={12}
+  >
+    <TextField
+      fullWidth
+      label="Información del profesor/a"
+      name="experiencia"
+      /*onChange={handleChange}*/
+      required
+      value={user.experience}
+      variant="outlined"
+    />
+  </Grid>        
     <CardActions>
       {/* <Button
         color="primary"
